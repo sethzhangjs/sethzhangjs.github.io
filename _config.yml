@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "sethzhangjs_profile.png"
   name             : "Jiashuo (Seth) Zhang"
   pronouns         : "He/Him/His"  
   bio              : "Short biography for the left-hand sidebar"
