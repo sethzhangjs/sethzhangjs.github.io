@@ -22,6 +22,10 @@ Master of Science in Engineering, Computer Science
 *School of Software* | *Jinan, Shandong, China*  
 Bachelor of Engineering (Hons.), Software Engineering  
 
+Research Experience
+======
+**Shandong University**  
+*School of Software* | *Supervisor: Leyi Wei*
 
 Employment
 ======
