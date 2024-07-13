@@ -24,10 +24,15 @@ Bachelor of Engineering (Hons.), Software Engineering
 
 Research Experience
 ======
-**Shandong University**  
-*School of Software* | *Supervisor: Leyi Wei*
+**Emory University**  
+*Department of Computer Science* | *Supervisor: Liang Zhao*  
+Topics: Multimodal, Grounding
 
-Employment
+**Shandong University**  
+*School of Software* | *Supervisor: Leyi Wei*  
+Topics: Bioinformatics, NLP
+
+Employment Experience
 ======
 **Bosch**  | 2023.11 - 2024.03  
 *Bosch Automotive Products (Suzhou) Co., Ltd.* | *Suzhou, Jiangsu, China*  
