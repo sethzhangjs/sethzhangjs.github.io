@@ -11,16 +11,6 @@ About me
 Hi! My name is Jiashuo Zhang.
 
 
-Education
-======
-**Johns Hopkins University** | 2024.08 - 2026.05  
-*Department of Computer Science* | *Baltimore, MD, US*  
-Master of Science in Engineering, Computer Science  
-
-
-**Shandong University** | 2020.09 - 2024.06  
-*School of Software* | *Jinan, Shandong, China*  
-Bachelor of Engineering (Hons.), Software Engineering  
 
 <!-- 
 Research Experience
