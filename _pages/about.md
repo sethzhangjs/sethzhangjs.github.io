@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jiashuo (Seth) Zhang"
+title: "Jiashuo Zhang"
 author_profile: true
 redirect_from: 
   - /about/
@@ -8,7 +8,7 @@ redirect_from:
 ---
 About me
 ======
-Hi! My name is Jiashuo Zhang (张家硕), also known as Seth.
+Hi! My name is Jiashuo Zhang.
 
 
 Education
@@ -22,6 +22,7 @@ Master of Science in Engineering, Computer Science
 *School of Software* | *Jinan, Shandong, China*  
 Bachelor of Engineering (Hons.), Software Engineering  
 
+<!-- 
 Research Experience
 ======
 **Emory University**  
@@ -36,5 +37,5 @@ Employment Experience
 ======
 **Bosch**  | 2023.11 - 2024.03  
 *Bosch Automotive Products (Suzhou) Co., Ltd.* | *Suzhou, Jiangsu, China*  
-Software Engineer Intern 
+Software Engineer Intern  -->
 
