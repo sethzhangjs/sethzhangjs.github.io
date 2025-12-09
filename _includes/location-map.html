@@ -1,0 +1,129 @@
+<div id="location-map" style="height: 450px; width: 100%; margin: 2em 0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Create map
+    var map = L.map('location-map').setView([35, 100], 3);
+
+    // Add tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18
+    }).addTo(map);
+
+    // Custom icon for current location (blue) - extra small size
+    var currentIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+        iconSize: [15, 25],
+        iconAnchor: [7, 25],
+        popupAnchor: [1, -20],
+        shadowSize: [25, 25]
+    });
+
+    // Custom icon for undergraduate (green) - extra small size
+    var undergradIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+        iconSize: [15, 25],
+        iconAnchor: [7, 25],
+        popupAnchor: [1, -20],
+        shadowSize: [25, 25]
+    });
+
+    // Custom icon for birthplace (red) - extra small size
+    var birthIcon = L.icon({
+        iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+        shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png',
+        iconSize: [15, 25],
+        iconAnchor: [7, 25],
+        popupAnchor: [1, -20],
+        shadowSize: [25, 25]
+    });
+
+    // Main locations
+    var mainMarkers = [];
+
+    var baltimore = L.marker([39.2904, -76.6122], {icon: currentIcon})
+        .addTo(map)
+        .bindPopup('<b>Baltimore, MD</b><br>Current Location<br>Johns Hopkins University');
+    mainMarkers.push(baltimore);
+
+    var shandong = L.marker([36.6512, 117.1205], {icon: undergradIcon})
+        .addTo(map)
+        .bindPopup('<b>Jinan, Shandong, China</b><br>Undergraduate<br>Shandong University');
+    mainMarkers.push(shandong);
+
+    var jining = L.marker([35.4154, 116.5875], {icon: birthIcon})
+        .addTo(map)
+        .bindPopup('<b>Jining, Shandong, China</b><br>Hometown');
+    mainMarkers.push(jining);
+
+    // Visited places - using circle markers (dots)
+    var visitedPlaces = [
+        // China
+        {name: 'Suzhou, China', coords: [31.2989, 120.5853]},
+        {name: 'Hangzhou, China', coords: [30.2741, 120.1551]},
+        {name: 'Jiaxing, China', coords: [30.7463, 120.7500]},
+        {name: 'Beijing, China', coords: [39.9042, 116.4074]},
+        {name: 'Shanghai, China', coords: [31.2304, 121.4737]},
+        {name: 'Nanjing, China', coords: [32.0603, 118.7969]},
+        {name: 'Tianjin, China', coords: [39.3434, 117.3616]},
+        {name: 'Dalian, China', coords: [38.9140, 121.6147]},
+        {name: 'Qingdao, China', coords: [36.0671, 120.3826]},
+        {name: 'Hong Kong SAR', coords: [22.3193, 114.1694]},
+        {name: 'Macau SAR', coords: [22.1987, 113.5439]},
+        {name: 'Guangzhou, China', coords: [23.1291, 113.2644]},
+        {name: 'Chengdu, China', coords: [30.5728, 104.0668]},
+        {name: 'Chongqing, China', coords: [29.4316, 106.9123]},
+        {name: 'Sanya, China', coords: [18.2528, 109.5117]},
+        {name: 'Haikou, China', coords: [20.0444, 110.1999]},
+        {name: 'Guilin, China', coords: [25.2736, 110.2900]},
+        {name: "Xi'an, China", coords: [34.3416, 108.9398]},
+        {name: 'Weihai, China', coords: [37.5128, 122.1201]},
+        {name: 'Rizhao, China', coords: [35.4164, 119.4270]},
+        // Korea
+        {name: 'Seoul, South Korea', coords: [37.5665, 126.9780]},
+        {name: 'Incheon, South Korea', coords: [37.4563, 126.7052]},
+        {name: 'Jeju Island, South Korea', coords: [33.4996, 126.5312]},
+        // USA
+        {name: 'San Francisco, CA', coords: [37.7749, -122.4194]},
+        {name: 'Philadelphia, PA', coords: [39.9526, -75.1652]},
+        {name: 'Washington, DC', coords: [38.9072, -77.0369]}
+    ];
+
+    var visitedMarkers = [];
+    visitedPlaces.forEach(function(place) {
+        var marker = L.circleMarker(place.coords, {
+            radius: 5,
+            fillColor: '#888',
+            color: '#555',
+            weight: 1,
+            opacity: 0.8,
+            fillOpacity: 0.6
+        })
+            .addTo(map)
+            .bindPopup('<span style="font-size: 0.85em;">' + place.name + '</span>');
+        visitedMarkers.push(marker);
+    });
+
+    // Show popup on hover for all markers
+    var allInteractiveMarkers = mainMarkers.concat(visitedMarkers);
+    allInteractiveMarkers.forEach(function(marker) {
+        marker.on('mouseover', function() {
+            this.openPopup();
+        });
+        marker.on('mouseout', function() {
+            this.closePopup();
+        });
+    });
+
+    // Fit map to show all markers
+    var allMarkers = mainMarkers.concat(visitedMarkers);
+    var group = L.featureGroup(allMarkers);
+    map.fitBounds(group.getBounds().pad(0.1));
+});
+</script>
