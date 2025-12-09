@@ -39,3 +39,47 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Custom modern minimalist publication style */
+
+/* Add space after Google Scholar link */
+.page__content .wordwrap {
+  margin-bottom: 2em;
+}
+
+.archive__item-title {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  font-size: 1em;
+  line-height: 1.4;
+
+  a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+  }
+}
+
+.archive__item-authors {
+  margin: 0 0 0.25em 0;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.3;
+}
+
+.archive__item-venue {
+  margin: 0;
+  font-size: 0.85em;
+  color: #666;
+  line-height: 1.3;
+}
+
+.list__item {
+  margin-bottom: 1em;
+  padding-bottom: 0;
+  border-bottom: none;
+}

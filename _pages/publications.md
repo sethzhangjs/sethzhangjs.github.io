@@ -5,12 +5,17 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
+<!-- Preprints first, then published papers -->
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  {% if post.type == "preprint" %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.publications reversed %}
+  {% if post.type != "preprint" %}
+    {% include archive-single.html %}
+  {% endif %}
 {% endfor %}
