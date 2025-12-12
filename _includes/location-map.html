@@ -6,8 +6,14 @@
 
 <script>
 (function() {
-if (typeof window !== 'undefined' && typeof L !== 'undefined') {
-document.addEventListener('DOMContentLoaded', function() {
+// Wait for Leaflet to load
+function initMap() {
+if (typeof L === 'undefined') {
+    setTimeout(initMap, 50);
+    return;
+}
+
+function setupMap() {
     // Create map
     var map = L.map('location-map').setView([35, 100], 3);
 
@@ -128,7 +134,15 @@ document.addEventListener('DOMContentLoaded', function() {
     var allMarkers = mainMarkers.concat(visitedMarkers);
     var group = L.featureGroup(allMarkers);
     map.fitBounds(group.getBounds().pad(0.1));
-});
 }
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupMap);
+} else {
+    setupMap();
+}
+}
+
+initMap();
 })();
 </script>
