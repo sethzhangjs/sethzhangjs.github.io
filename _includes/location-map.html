@@ -1,9 +1,12 @@
 <div id="location-map" style="height: 450px; width: 100%; margin: 2em 0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"></div>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 
 <script>
+(function() {
+if (typeof window !== 'undefined' && typeof L !== 'undefined') {
 document.addEventListener('DOMContentLoaded', function() {
     // Create map
     var map = L.map('location-map').setView([35, 100], 3);
@@ -126,4 +129,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var group = L.featureGroup(allMarkers);
     map.fitBounds(group.getBounds().pad(0.1));
 });
+}
+})();
 </script>
