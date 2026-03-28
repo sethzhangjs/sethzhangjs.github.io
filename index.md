@@ -4,11 +4,11 @@ layout: homepage
 
 ## About Me
 
-I am a Research Assistant at Johns Hopkins University, advised by Prof. Michael Oberst. I also work part-time as a Machine Learning Engineer at [Visilant Inc](#https://www.visilant.org/).
+I am a Research Assistant at Johns Hopkins University, advised by Prof. Michael Oberst. I also work part-time as a Machine Learning Engineer at <a href="https://www.visilant.org/" target="_blank">Visilant Inc</a>.
 
-I received my M.S. in Computer Science from [Johns Hopkins University](https://www.jhu.edu/), where I was fortunate to be advised by Prof. [ Michael Oberst](#https://www.michaelkoberst.com/) from the Department of Computer Science and Prof. [Kunal Parikh](#https://profiles.hopkinsmedicine.org/provider/kunal-sailesh-parikh/2777778) from the School of Medicine. I am also privileged to collaborate with Prof. [Liang Zhao](#https://cs.emory.edu/~lzhao41/) from Emory University.
+I received my M.S. in Computer Science from <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a>, where I was fortunate to be advised by Prof. <a href="https://www.michaelkoberst.com/" target="_blank">Michael Oberst</a> from the Department of Computer Science and Prof. <a href="https://profiles.hopkinsmedicine.org/provider/kunal-sailesh-parikh/2777778" target="_blank">Kunal Parikh</a> from the School of Medicine. I am also privileged to collaborate with Prof. <a href="https://cs.emory.edu/~lzhao41/" target="_blank">Liang Zhao</a> from Emory University.
 
-Prior to that, I completed my B.E. in Software Engineering with honors from [Shandong University](https://www.sdu.edu.cn/) in June 2024, supervised by Prof. [Leyi Wei](#https://wei-group.net/currentmember), working on bioinformatics research.
+Prior to that, I completed my B.E. in Software Engineering with honors from <a href="https://www.sdu.edu.cn/" target="_blank">Shandong University</a> in June 2024, supervised by Prof. <a href="https://wei-group.net/currentmember" target="_blank">Leyi Wei</a>, working on bioinformatics research.
 
 <!-- ## Research Interests
 
