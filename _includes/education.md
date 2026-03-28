@@ -11,7 +11,7 @@
                 <br>
                 Aug. 2024 – Dec. 2025 &nbsp;·&nbsp; Baltimore, MD
                 <br>
-                M.S. in Computer Science
+                Master of Science &nbsp;·&nbsp; Computer Science
             </div>
         </td>
     </tr>
@@ -25,7 +25,7 @@
                 <br>
                 Sep. 2020 – Jun. 2024 &nbsp;·&nbsp; Jinan, China
                 <br>
-                B.E. in Software Engineering
+                Bachelor of Engineering &nbsp;·&nbsp; Software Engineering
             </div>
         </td>
     </tr>

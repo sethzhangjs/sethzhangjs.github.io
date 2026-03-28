@@ -7,7 +7,7 @@
         </td>
         <td style="border: none; vertical-align: middle; padding: 12px 0;">
             <div>
-                <b>Visilant Inc.</b>
+                <b>Visilant</b>
                 <br>
                 Feb. 2026 – Present &nbsp;·&nbsp; Baltimore, MD
                 <br>
