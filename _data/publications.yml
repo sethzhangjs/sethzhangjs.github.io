@@ -1,0 +1,22 @@
+main:
+
+  - title: "Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context"
+    authors: "Andrew Wang, <strong style='font-weight:550;'>Jiashuo Zhang</strong>, Michael Oberst"
+    conference_short: arXiv
+    conference: "arXiv preprint, 2025."
+    pdf: https://arxiv.org/pdf/2509.19671
+    image: ./assets/img/pub/pub_chestxray.png
+
+  - title: "Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from LDCT"
+    authors: "Yifei Zhang, <strong style='font-weight:550;'>Jiashuo Zhang</strong>, Xiaofeng Yang, Liang Zhao"
+    conference_short: arXiv
+    conference: "arXiv preprint, 2025."
+    pdf: https://arxiv.org/pdf/2511.06625
+    image: ./assets/img/pub/pub_ldct.png
+
+  - title: "MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid Binding Residues of Proteins"
+    authors: "<strong style='font-weight:550;'>Jiashuo Zhang</strong>, Ruheng Wang, Leyi Wei"
+    conference_short: JCIM
+    conference: "Journal of Chemical Information and Modeling, 2024."
+    pdf: https://pubs.acs.org/doi/abs/10.1021/acs.jcim.3c01471
+    image: ./assets/img/pub/pub_muclipred.png
