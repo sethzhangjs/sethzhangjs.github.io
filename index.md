@@ -21,3 +21,5 @@ Prior to that, I completed my B.E. in Software Engineering with honors from _Sha
 {% include_relative _includes/experience.md %}
 
 {% include_relative _includes/education.md %}
+
+{% include_relative _includes/honors.md %}
