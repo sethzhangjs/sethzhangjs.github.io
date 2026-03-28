@@ -46,7 +46,7 @@
 
         <h1>{{ site.title }}</h1>
         {% if site.name_chinese %}
-        <p style="font-size:1rem; margin: -0.5em 0 0.5em; color:#595959;">{{ site.name_chinese }}</p>
+        <p style="font-size:1.3rem; margin: -0.5em 0 0.5em; color:#043361; font-weight:700;">{{ site.name_chinese }}</p>
         {% endif %}
 
         {% if site.position %}
@@ -60,10 +60,13 @@
         {% if site.email %}
         <email>{{ site.email }}</email>
         {% endif %}
+        {% if site.location %}
+        <br>
+        <span style="font-size:14px;">{{ site.location }}</span>
+        {% endif %}
 
         <br>
-        <br>
-        
+
         <div class="social-icons">
         {% if site.orcid %}
         <a style="margin: 0 0 0 0" href="{{ site.orcid }}">
@@ -98,6 +101,10 @@
        
         </div>
         <br>
+
+        <div style="margin-top: 16px; display: flex; justify-content: center;">
+          <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=gQsgjnOZFVMvayeFgfLJ0ENCf7jo4NZVsBKw_xvicO8&w=120"></script>
+        </div>
 
       </header>
       <section>
