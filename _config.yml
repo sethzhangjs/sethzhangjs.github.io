@@ -6,15 +6,16 @@ affiliation: Johns Hopkins University
 email: jzhan427 (at) jhu.edu
 
 # SEO
-keywords: Jiashuo Zhang, Johns Hopkins, AI, biomedical, healthcare, machine learning
-description: Personal academic homepage of Jiashuo Zhang, Research Assistant at Johns Hopkins University.
+keywords: Jiashuo Zhang, Johns Hopkins, AI, healthcare, machine learning, bioinformatics
+description: Personal academic homepage of Jiashuo Zhang, Johns Hopkins University.
 canonical: https://sethzhangjs.github.io/
 
 # Links
+orcid: https://orcid.org/my-orcid?orcid=0009-0006-2838-3519
 google_scholar: https://scholar.google.com/citations?user=ao8Tf0gAAAAJ&hl=en
 github_link: https://github.com/sethzhangjs
 linkedin: https://www.linkedin.com/in/sethzhangjs
-orcid: https://orcid.org/my-orcid?orcid=0009-0006-2838-3519
+
 
 # Images
 avatar: ./assets/img/avatar.jpg
