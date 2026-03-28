@@ -23,7 +23,7 @@
             <div>
                 <b>Shandong University</b>
                 <br>
-                Sep. 2020 – Jun. 2024 &nbsp;·&nbsp; Jinan, China
+                Sept. 2020 – June 2024 &nbsp;·&nbsp; Jinan, China
                 <br>
                 Bachelor of Engineering &nbsp;·&nbsp; Software Engineering
             </div>
