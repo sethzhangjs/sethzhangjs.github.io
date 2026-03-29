@@ -1,8 +1,10 @@
-/* Wider layout */
-.wrapper {
-  width: 1050px;
-}
+/* Wider layout - desktop only */
+@media screen and (min-width: 961px) {
+  .wrapper {
+    width: 1050px;
+  }
 
-section {
-  width: 760px;
+  section {
+    width: 760px;
+  }
 }
