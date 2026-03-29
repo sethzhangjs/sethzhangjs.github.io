@@ -15,6 +15,7 @@ section {
 @media (max-width: 768px) {
   .wrapper {
     padding: 0 16px;
+    overflow-x: hidden;
   }
 
   header {
@@ -28,8 +29,11 @@ section {
     float: none !important;
     width: 100% !important;
     margin: 0 !important;
-    padding: 0 !important;
+    margin-left: 0 !important;
+    padding: 16px 0 !important;
     border: none !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
   }
 
   .social-icons {
