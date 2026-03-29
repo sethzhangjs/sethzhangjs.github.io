@@ -41,7 +41,7 @@
       <header>
         
         {% if site.avatar %}
-        <a class="image avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
+        <a class="image avatar" id="avatar-link" style="cursor:pointer;"><img src="{{ site.avatar }}" alt="avatar" id="avatar-img" /></a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
@@ -114,6 +114,123 @@
       function speakName() {
         new Audio('{{ "/assets/audio/name.m4a" | relative_url }}').play();
       }
+
+      (function () {
+        var avatarLink = document.getElementById('avatar-link');
+        if (!avatarLink) return;
+
+        var animating = false;
+
+        avatarLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (animating) return;
+          animating = true;
+
+          var img = document.getElementById('avatar-img');
+          var rect = img.getBoundingClientRect();
+          var size = rect.width;
+
+          // Create floating clone
+          var clone = img.cloneNode(true);
+          clone.style.cssText = [
+            'position:fixed',
+            'left:' + rect.left + 'px',
+            'top:' + rect.top + 'px',
+            'width:' + size + 'px',
+            'height:' + size + 'px',
+            'border-radius:50%',
+            'z-index:9999',
+            'pointer-events:none',
+            'margin:0',
+            'will-change:transform',
+            'box-shadow:0 8px 32px rgba(0,0,0,0.25)'
+          ].join(';');
+          document.body.appendChild(clone);
+
+          img.style.opacity = '0';
+
+          // Show fun facts at original position
+          var funFacts = document.createElement('div');
+          var boxW = 220;
+          funFacts.style.cssText = [
+            'position:fixed',
+            'left:' + (rect.left + size / 2 - boxW / 2) + 'px',
+            'top:' + rect.top + 'px',
+            'width:' + boxW + 'px',
+            'height:' + size + 'px',
+            'display:flex',
+            'flex-direction:column',
+            'align-items:center',
+            'justify-content:center',
+            'text-align:center',
+            'font-size:0.72rem',
+            'line-height:1.8',
+            'color:#555',
+            'z-index:9998',
+            'pointer-events:none',
+            'opacity:0',
+            'transition:opacity 0.4s ease'
+          ].join(';');
+          funFacts.innerHTML = 'I hit the gym 3-5 times a week 💪<br>I\'ve been playing the violin over 15 years 🎻';
+          document.body.appendChild(funFacts);
+          requestAnimationFrame(function () { funFacts.style.opacity = '1'; });
+
+          var origX = rect.left;
+          var origY = rect.top;
+
+          // Generate random waypoints
+          var numPoints = 5;
+          var waypoints = [];
+          for (var i = 0; i < numPoints; i++) {
+            waypoints.push({
+              x: size + Math.random() * (window.innerWidth - size * 3),
+              y: size + Math.random() * (window.innerHeight - size * 3),
+              r: (Math.random() - 0.5) * 900
+            });
+          }
+          // Return home
+          waypoints.push({ x: origX, y: origY, r: 0 });
+
+          var DURATION = 520;
+          var current = 0;
+          var startX = origX, startY = origY, startR = 0;
+          var startTime = null;
+
+          function ease(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          }
+
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var p = Math.min((ts - startTime) / DURATION, 1);
+            var e = ease(p);
+            var wp = waypoints[current];
+
+            clone.style.left = (startX + (wp.x - startX) * e) + 'px';
+            clone.style.top  = (startY + (wp.y - startY) * e) + 'px';
+            clone.style.transform = 'rotate(' + (startR + (wp.r - startR) * e) + 'deg)';
+
+            if (p < 1) {
+              requestAnimationFrame(step);
+            } else {
+              startX = wp.x; startY = wp.y; startR = wp.r;
+              startTime = null;
+              current++;
+              if (current < waypoints.length) {
+                requestAnimationFrame(step);
+              } else {
+                clone.remove();
+                funFacts.style.opacity = '0';
+                setTimeout(function () { funFacts.remove(); }, 400);
+                img.style.opacity = '';
+                animating = false;
+              }
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+      })();
     </script>
     {% if site.google_analytics %}
     <script>
