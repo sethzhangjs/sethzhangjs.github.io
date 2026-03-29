@@ -26,8 +26,8 @@ x_link: https://x.com/sethzhangjs
 
 # Images
 avatar: ./assets/img/avatar.jpg
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
+favicon: https://github.com/favicon.ico
+favicon_dark: https://github.com/favicon.ico
 
 # Options
 enable_footnote: true
