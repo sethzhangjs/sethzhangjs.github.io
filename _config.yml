@@ -45,6 +45,12 @@ plugins:
 include:
   - googlee9bf8160cee322e5.html
 
+defaults:
+  - scope:
+      path: "files"
+    values:
+      sitemap: false
+
 exclude:
   - Gemfile
   - Gemfile.lock
