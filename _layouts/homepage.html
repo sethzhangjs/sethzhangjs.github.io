@@ -110,7 +110,27 @@
         
       </footer>
     </div>
+    <!-- Lightbox overlay -->
+    <div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:10000; align-items:center; justify-content:center; cursor:zoom-out;">
+      <img id="lightbox-img" src="" style="max-width:90vw; max-height:90vh; object-fit:contain; border-radius:6px; box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+    </div>
+
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      function openLightbox(src) {
+        var lb = document.getElementById('lightbox');
+        document.getElementById('lightbox-img').src = src;
+        lb.style.display = 'flex';
+        document.addEventListener('keydown', closeLightboxOnEsc);
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.removeEventListener('keydown', closeLightboxOnEsc);
+      }
+      function closeLightboxOnEsc(e) {
+        if (e.key === 'Escape') closeLightbox();
+      }
+    </script>
     <script>
       function speakName() {
         new Audio('{{ "/assets/audio/name.m4a" | relative_url }}').play();

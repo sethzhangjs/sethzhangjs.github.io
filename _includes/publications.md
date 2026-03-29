@@ -13,7 +13,7 @@
     <abbr class="badge" style="position:absolute; top:6px; left:6px; z-index:1; background-color:#002D72; color:#fff;">{{ link.conference_short }}</abbr>
     {% endif %}
     {% if link.image %}
-    <img src="{{ link.image }}" style="width:200px; height:130px; object-fit:contain; display:block;">
+    <img src="{{ link.image }}" style="width:200px; height:130px; object-fit:contain; display:block; cursor:zoom-in;" onclick="openLightbox(this.src)">
     {% endif %}
   </div>
 
