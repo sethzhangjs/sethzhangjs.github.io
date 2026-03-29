@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
     <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap">
 
   </head>
   <body>
@@ -163,7 +164,8 @@
             'align-items:center',
             'justify-content:center',
             'text-align:center',
-            'font-size:0.72rem',
+            'font-family:Caveat,cursive',
+            'font-size:1rem',
             'line-height:1.8',
             'color:#555',
             'z-index:9998',
@@ -171,7 +173,7 @@
             'opacity:0',
             'transition:opacity 0.4s ease'
           ].join(';');
-          funFacts.innerHTML = 'I hit the gym 3-5 times a week 💪<br>I\'ve been playing the violin over 15 years 🎻';
+          funFacts.innerHTML = 'Hit the gym 3-5x a week 💪<br>Violin for 15+ years 🎻';
           document.body.appendChild(funFacts);
           requestAnimationFrame(function () { funFacts.style.opacity = '1'; });
 
