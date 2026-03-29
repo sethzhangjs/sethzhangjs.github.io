@@ -125,17 +125,7 @@
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script>
       function speakName() {
-        if ('speechSynthesis' in window) {
-          window.speechSynthesis.cancel();
-          var u1 = new SpeechSynthesisUtterance('家硕');
-          u1.lang = 'zh-CN';
-          u1.rate = 0.85;
-          var u2 = new SpeechSynthesisUtterance('张');
-          u2.lang = 'zh-CN';
-          u2.rate = 0.85;
-          window.speechSynthesis.speak(u1);
-          window.speechSynthesis.speak(u2);
-        }
+        new Audio('{{ "/assets/audio/name.m4a" | relative_url }}').play();
       }
     </script>
     {% if site.google_analytics %}
