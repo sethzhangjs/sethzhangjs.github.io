@@ -46,7 +46,7 @@
 
         <h1>{{ site.title }}</h1>
         {% if site.name_chinese %}
-        <p style="font-size:1.3rem; margin: -0.5em 0 0.5em; color:#043361; font-weight:700;">{{ site.name_chinese }}</p>
+        <p style="font-size:1.3rem; margin: -0.5em 0 0.5em; color:#043361; font-weight:700;">{{ site.name_chinese }}<button onclick="speakName()" title="Hear pronunciation" style="background:none;border:none;cursor:pointer;padding:0;margin-left:8px;vertical-align:middle;color:#043361;font-size:1.1rem;"><i class="fas fa-volume-up"></i></button></p>
         {% endif %}
 
         {% if site.position %}
@@ -123,6 +123,21 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+      function speakName() {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          var u1 = new SpeechSynthesisUtterance('家硕');
+          u1.lang = 'zh-CN';
+          u1.rate = 0.85;
+          var u2 = new SpeechSynthesisUtterance('张');
+          u2.lang = 'zh-CN';
+          u2.rate = 0.85;
+          window.speechSynthesis.speak(u1);
+          window.speechSynthesis.speak(u2);
+        }
+      }
+    </script>
     {% if site.google_analytics %}
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
