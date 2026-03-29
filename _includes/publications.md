@@ -19,8 +19,8 @@
 
   <!-- Text -->
   <div style="flex:1; min-width:0;">
-    <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
-    <div class="author">{{ link.authors }}</div>
+    <div class="title">{% if link.doi %}<a href="{{ link.doi }}">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
+    <div class="author">{{ link.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
     <div class="periodical"><em>{{ link.conference }}</em></div>
     <div class="links" style="margin-top:4px;">
       {% if link.pdf %}

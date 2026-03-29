@@ -1,3 +1,8 @@
+.social-icons a {
+  padding: 0 2px !important;
+  margin: 0 !important;
+}
+
 /* Wider layout - desktop only */
 @media screen and (min-width: 961px) {
   .wrapper {

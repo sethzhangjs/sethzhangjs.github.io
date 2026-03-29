@@ -54,51 +54,38 @@
         <br>
         {% endif %}
         {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener"><autocolor>{{ site.affiliation }}</autocolor></a>
+        <autocolor>{{ site.affiliation }}</autocolor>
+        <br>
+        {% endif %}
+        {% if site.location %}
+        <span style="font-size:14px;">{{ site.location }}</span>
         <br>
         {% endif %}
         {% if site.email %}
         <email>{{ site.email }}</email>
         {% endif %}
-        {% if site.location %}
-        <br>
-        <span style="font-size:14px;">{{ site.location }}</span>
+        {% if site.email_personal %}
+        <br><email>{{ site.email_personal }}</email>
         {% endif %}
 
         <br>
 
-        <div class="social-icons">
-        {% if site.orcid %}
-        <a style="margin: 0 0 0 0" href="{{ site.orcid }}">
-          <i class="ai ai-orcid" style="font-size:1.2rem"></i>
-        </a>
-        {% endif %}
-
-        {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
-          <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-        </a>  
-        {% endif %}
-
-        {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
-          <i class="ai ai-cv" style="font-size:1.3rem;"></i>
-        </a>
-        {% endif %}
-
-        {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
-          <i class="fab fa-github"></i>
-        </a>
-        {% endif %}
-
-        {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        {% endif %}
-
-       
+        <div class="social-icons" style="display:flex; flex-wrap:nowrap; justify-content:center;">
+          {% if site.orcid %}
+          <a href="{{ site.orcid }}" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.google_scholar %}
+          <a href="{{ site.google_scholar }}" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.github_link %}
+          <a href="{{ site.github_link }}" style="padding:0 4px;"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a href="{{ site.linkedin }}" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
+          {% if site.cv_link %}
+          <a href="{{ site.cv_link }}" style="padding:0 4px;"><i class="fas fa-file-lines"></i></a>
+          {% endif %}
         </div>
         <br>
 
