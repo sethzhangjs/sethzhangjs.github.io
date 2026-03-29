@@ -1,8 +1,43 @@
 /* Wider layout */
 .wrapper {
-  width: 1050px;
+  max-width: 1050px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 section {
-  width: 760px;
+  max-width: 760px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  header {
+    width: 100% !important;
+    float: none !important;
+    position: static !important;
+    text-align: center;
+  }
+
+  section {
+    float: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  header img.avatar {
+    width: 120px !important;
+    height: 120px !important;
+  }
 }
