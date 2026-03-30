@@ -117,6 +117,23 @@
 
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script>
+      document.querySelectorAll('.edu-flip-card').forEach(function(card) {
+        if (card.dataset.flip === 'disabled') return;
+        var timer = null;
+        card.addEventListener('click', function() {
+          clearTimeout(timer);
+          if (card.classList.contains('flipped')) {
+            card.classList.remove('flipped');
+          } else {
+            card.classList.add('flipped');
+            timer = setTimeout(function() {
+              card.classList.remove('flipped');
+            }, 4000);
+          }
+        });
+      });
+    </script>
+    <script>
       function openLightbox(src) {
         var lb = document.getElementById('lightbox');
         document.getElementById('lightbox-img').src = src;

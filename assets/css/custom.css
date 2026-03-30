@@ -3,6 +3,62 @@
   margin: 0 !important;
 }
 
+/* Education flip card */
+.edu-flip-card {
+  perspective: 800px;
+  max-width: 60%;
+}
+
+.edu-flip-inner {
+  display: grid;
+  width: 100%;
+  transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.edu-flip-card.flipped .edu-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.edu-flip-card:not([data-flip="disabled"]) {
+  cursor: pointer;
+}
+
+.edu-flip-front,
+.edu-flip-back {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edu-flip-back {
+  transform: rotateY(180deg);
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.edu-flip-back > span {
+  display: block;
+  white-space: normal;
+}
+
+.edu-flip-back .edu-back-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.edu-flip-front p,
+.edu-flip-back p {
+  margin: 0;
+}
+
 /* Wider layout - desktop only */
 @media screen and (min-width: 961px) {
   .wrapper {
