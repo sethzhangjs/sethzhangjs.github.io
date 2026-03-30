@@ -9,7 +9,7 @@
 
   <!-- Text -->
   <div style="flex:1; min-width:0;">
-    <div class="title">{% if item.image %}<a href="{{ item.image }}" target="_blank">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
+    <div class="title">{% if item.poster_url %}<a href="{{ item.poster_url }}" target="_blank">{{ item.title }}</a>{% elsif item.image %}<a href="{{ item.image }}" target="_blank">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
     <div class="author">{{ item.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
     <div class="periodical"><em>{{ item.venue }}</em> · {{ item.date }}{% if item.type %} · {{ item.type }}{% endif %}</div>
     {% if item.pdf %}
