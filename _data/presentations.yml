@@ -1,0 +1,10 @@
+main:
+
+  - title: "Guideline and Evidence-Based Shared Decision-Making: Healthcare Knowledge Q&A System"
+    venue: "The 9th Annual Johns Hopkins Research Symposium on Engineering in Healthcare"
+    venue_short: JHU
+    authors: "Jiashuo Zhang, Erik Skalnes, Yvonne Commodore-Mensah, Cheryl Dennison Himmelfarb, Yuling Chen, Michael Oberst"
+    type: Poster
+    date: 2025
+    location: Baltimore, MD
+    image: ./assets/img/poster/jhu-2025-12.png

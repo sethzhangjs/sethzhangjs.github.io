@@ -8,7 +8,7 @@ I am a Research Assistant at Johns Hopkins University, advised by Prof. Michael 
 
 I received my M.S. in Computer Science from _Johns Hopkins University_, where I was fortunate to be advised by Prof. <a href="https://www.michaelkoberst.com/" target="_blank">Michael Oberst</a> from the Department of Computer Science and Prof. <a href="https://profiles.hopkinsmedicine.org/provider/kunal-sailesh-parikh/2777778" target="_blank">Kunal Parikh</a> from the School of Medicine. I am also privileged to collaborate with Prof. <a href="https://cs.emory.edu/~lzhao41/" target="_blank">Liang Zhao</a> from Emory University.
 
-Prior to that, I completed my B.E. in Software Engineering with honors from _Shandong University_, under the supervision of Prof. <a href="https://wei-group.net/currentmember" target="_blank">Leyi Wei</a>, working on bioinformatics research.
+Prior to that, I completed my B.E. with honors in Software Engineering from _Shandong University_, under the supervision of Prof. <a href="https://wei-group.net/currentmember" target="_blank">Leyi Wei</a>, working on bioinformatics research.
 
 <!-- ## Research Interests
 
@@ -17,6 +17,8 @@ Prior to that, I completed my B.E. in Software Engineering with honors from _Sha
 - **Machine Learning:** contrastive learning, explainable AI -->
 
 {% include_relative _includes/publications.md %}
+
+{% include_relative _includes/presentations.md %}
 
 {% include_relative _includes/experience.md %}
 
