@@ -21,7 +21,7 @@
   <div style="flex:1; min-width:0;">
     <div class="title">{% if link.doi %}<a href="{{ link.doi }}" target="_blank" rel="noopener">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
     <div class="author">{{ link.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
-    <div class="periodical"><em>{{ link.conference }}</em></div>
+    <div class="periodical"><em>{{ link.conference | split: " · " | first }}</em>{% assign _year = link.conference | split: " · " | last %}{% if _year != link.conference %} · {{ _year }}{% endif %}</div>
     <div class="links" style="margin-top:4px;">
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>

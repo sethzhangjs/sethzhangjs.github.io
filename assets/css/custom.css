@@ -1,3 +1,8 @@
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .periodical {
+  font-size: 14px;
+}
+
 .social-icons a {
   padding: 0 2px !important;
   margin: 0 !important;
