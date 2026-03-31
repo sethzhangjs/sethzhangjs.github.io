@@ -1,6 +1,6 @@
 ## Honors & Awards
 
-<ul style="margin:0 0 5px;">
+<ul style="margin:0 0 5px; padding-left: 1.2em;">
   <li>
     <b>Bachelor's Degree with Honors</b> &nbsp;·&nbsp; Shandong University, 2024
     <br>

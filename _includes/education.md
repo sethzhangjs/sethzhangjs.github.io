@@ -1,8 +1,8 @@
 ## Education
 
-<table frame="void" rules="none" style="width: 100%; border-collapse: collapse;">
+<table frame="void" rules="none" style="width: 100%; border-collapse: collapse; margin-left: 12px;">
     <tr style="border: none;">
-        <td style="width: 15%; border: none; text-align: center; vertical-align: middle; padding: 12px 0;">
+        <td style="width: 50px; border: none; text-align: center; vertical-align: middle; padding: 12px 20px 12px 0;">
             <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="assets/img/edu/jhu.png" style="width: 50px; height: 50px; object-fit: contain; border-radius: 6px;"></a>
         </td>
         <td style="border: none; vertical-align: middle; padding: 12px 0;">
@@ -18,7 +18,7 @@
         </td>
     </tr>
     <tr style="border: none;">
-        <td style="width: 15%; border: none; text-align: center; vertical-align: middle; padding: 12px 0;">
+        <td style="width: 50px; border: none; text-align: center; vertical-align: middle; padding: 12px 20px 12px 0;">
             <a href="https://www.sdu.edu.cn/" target="_blank" rel="noopener"><img src="assets/img/edu/sdu.png" style="width: 50px; height: 50px; object-fit: contain; border-radius: 6px;"></a>
         </td>
         <td style="border: none; vertical-align: middle; padding: 12px 0;">
