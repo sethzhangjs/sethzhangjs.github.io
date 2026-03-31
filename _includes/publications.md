@@ -8,7 +8,7 @@
 <div style="display:flex; align-items:flex-start; margin-bottom:1.5rem;">
 
   <!-- Image box: strictly fixed size -->
-  <div style="width:200px; min-width:200px; height:130px; overflow:hidden; position:relative; margin-right:16px; border-radius:4px; border: 1px solid rgba(0,0,0,0.05);">
+  <div style="width:200px; min-width:200px; height:130px; overflow:hidden; position:relative; margin-right:16px; border-radius:4px; box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 2px 3px 8px rgba(0,0,0,0.14);">
     {% if link.conference_short %}
     <abbr class="badge" style="position:absolute; top:6px; left:6px; z-index:1; background-color:#002D72; color:#fff;">{{ link.conference_short }}</abbr>
     {% endif %}
