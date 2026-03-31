@@ -9,7 +9,7 @@ main:
     image: ./assets/img/pub/pub_chestxray.png
 
   - title: "Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from LDCT"
-    authors: "Yifei Zhang, Jiashuo Zhang, Xiaofeng Yang, Liang Zhao"
+    authors: "Yifei Zhang, Jiashuo Zhang, Mojtaba Safari, Xiaofeng Yang, Liang Zhao"
     conference_short: arXiv
     conference: "arXiv preprint · 2025"
     doi: https://arxiv.org/abs/2511.06625
