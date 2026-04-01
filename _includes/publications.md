@@ -1,4 +1,4 @@
-<h2 id="publications" style="margin: 2px 0px -15px;">Publications</h2>
+<h2 id="publications" style="margin: 2px 0px -15px;"><a href="https://scholar.google.com/citations?user=ao8Tf0gAAAAJ&hl=en" target="_blank" rel="noopener" style="color:inherit; text-decoration:none;">Publications</a></h2>
 
 <div class="publications">
 <ol class="bibliography">
