@@ -21,12 +21,8 @@
   transform-style: preserve-3d;
 }
 
-.edu-flip-card.flipped .edu-flip-inner {
+.edu-flip-card:not([data-flip="disabled"]):hover .edu-flip-inner {
   transform: rotateY(180deg);
-}
-
-.edu-flip-card:not([data-flip="disabled"]) {
-  cursor: pointer;
 }
 
 .edu-flip-front {
