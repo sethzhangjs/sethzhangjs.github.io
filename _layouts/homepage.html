@@ -18,7 +18,7 @@
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
-    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css crossorigin=anonymous>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     {% if site.font == "Sans Serif" %}
@@ -71,22 +71,35 @@
 
         <br>
 
-        <div class="social-icons" style="display:flex; flex-wrap:nowrap; justify-content:center;">
-          {% if site.orcid %}
-          <a href="{{ site.orcid }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
-          {% endif %}
-          {% if site.google_scholar %}
-          <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
-          {% endif %}
-          {% if site.github_link %}
-          <a href="{{ site.github_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-github"></i></a>
-          {% endif %}
-          {% if site.linkedin %}
-          <a href="{{ site.linkedin }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
-          {% endif %}
-          {% if site.cv_link %}
-          <a href="{{ site.cv_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="far fa-file-lines"></i></a>
-          {% endif %}
+        <div class="social-icons" style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <div style="display:flex; flex-wrap:nowrap; justify-content:center;">
+            {% if site.google_scholar %}
+            <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+            {% endif %}
+            {% if site.semantic_scholar %}
+            <a href="{{ site.semantic_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-semantic-scholar" style="font-size:1.2rem"></i></a>
+            {% endif %}
+            {% if site.orcid %}
+            <a href="{{ site.orcid }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
+            {% endif %}
+            {% if site.dblp %}
+            <a href="{{ site.dblp }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-dblp" style="font-size:1.2rem"></i></a>
+            {% endif %}
+          </div>
+          <div style="display:flex; flex-wrap:nowrap; justify-content:center;">
+            {% if site.github_link %}
+            <a href="{{ site.github_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if site.x_link %}
+            <a href="{{ site.x_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-x-twitter"></i></a>
+            {% endif %}
+            {% if site.linkedin %}
+            <a href="{{ site.linkedin }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
+            {% endif %}
+            {% if site.cv_link %}
+            <a href="{{ site.cv_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="far fa-file-lines"></i></a>
+            {% endif %}
+          </div>
         </div>
         <br>
 
