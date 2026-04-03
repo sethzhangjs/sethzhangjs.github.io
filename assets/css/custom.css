@@ -1,3 +1,22 @@
+/* Emoji bounce row */
+@keyframes emoji-jump {
+  0%, 70%, 100% { transform: translateY(0); }
+  35%            { transform: translateY(-7px); }
+}
+
+.emoji-bounce-row {
+  display: inline-flex;
+  gap: 3px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.emoji-bounce {
+  display: inline-block;
+  animation: emoji-jump 3s ease-in-out infinite;
+  font-size: 1.05em;
+}
+
 .publications ol.bibliography li .author,
 .publications ol.bibliography li .periodical {
   font-size: 14px;
