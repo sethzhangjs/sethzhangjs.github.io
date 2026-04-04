@@ -7,8 +7,7 @@
 <li>
 <div style="margin-bottom:1.5rem;">
 
-  <!-- Text -->
-  <div style="flex:1; min-width:0;">
+  <div>
     <div class="title">{% if item.poster_url %}<a href="{{ item.poster_url }}" target="_blank">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
     <div class="author">{{ item.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
     <div class="periodical"><em>{{ item.venue }}</em>{% if item.type %} &middot; {{ item.type }}{% endif %}</div>

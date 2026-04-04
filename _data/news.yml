@@ -1,0 +1,29 @@
+main:
+  
+  - date: "Mar. 2026"
+    short: "Began employment at Johns Hopkins University."
+    detail: "Research Assistant in the lab of Prof. Michael Oberst."
+
+  - date: "Feb. 2026"
+    short: "Joined Visilant Inc."
+    detail: "Started working part-time as a Machine Learning Engineer."
+
+  - date: "Dec. 2025"
+    short: "Graduated from Johns Hopkins University."
+    detail: "Received a M.S. degree in Computer Science with GPA 3.96/4.0."
+
+  - date: "Dec. 2025"
+    short: "Presented a poster at JHU Engineering in Healthcare Symposium."
+    detail: "Presented 'Guideline and Evidence-Based Shared Decision-Making: Healthcare Knowledge Q&A System' at the 9th Annual Johns Hopkins Research Symposium on Engineering in Healthcare."
+
+  - date: "June 2024"
+    short: "Graduated from Shandong University in China."
+    detail: "Received a B.E. degree in Software Engineering with honors."
+
+  - date: "Feb. 2024"
+    short: "Published a paper in Journal of Chemical Information and Modeling."
+    detail: "MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid Binding Residues of Proteins."
+
+  - date: "Nov. 2023"
+    short: "Joined Bosch as a Software Engineer intern."
+    detail: "BCI/ESW1-CN Team."
