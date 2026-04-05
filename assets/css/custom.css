@@ -1,3 +1,11 @@
+/* Inline school logo */
+.inline-school-logo {
+  height: 1.1em;
+  width: auto;
+  vertical-align: -0.15em;
+  margin-right: 3px;
+}
+
 /* Emoji bounce row */
 @keyframes emoji-jump {
   0%, 70%, 100% { transform: translateY(0); }
@@ -130,11 +138,11 @@
 
 .news-content {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 75px 1fr;
   grid-template-rows: auto;
   column-gap: 8px;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 .news-content.news-has-detail {
@@ -145,7 +153,7 @@
   font-weight: 600;
   color: #002D72;
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .news-short {
@@ -158,7 +166,7 @@
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #555;
   line-height: 1.6;
   transition: max-height 0.35s ease, opacity 0.3s ease, margin-top 0.3s ease;
