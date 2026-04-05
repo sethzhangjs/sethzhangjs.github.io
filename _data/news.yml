@@ -21,9 +21,9 @@ main:
     detail: "Received a B.E. degree in Software Engineering with honors."
 
   - date: "Feb. 2024"
-    short: "Published a paper in Journal of Chemical Information and Modeling."
+    short: "My first paper was published in Journal of Chemical Information and Modeling."
     detail: "MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid Binding Residues of Proteins."
 
   - date: "Nov. 2023"
-    short: "Joined Bosch as a Software Engineer intern."
+    short: "Joined Bosch as a Software Engineer Intern."
     detail: "BCI/ESW1-CN Team."
