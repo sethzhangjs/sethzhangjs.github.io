@@ -17,15 +17,6 @@
   font-size: 1.05em;
 }
 
-.logo-bounce {
-  display: inline-block;
-  animation: emoji-jump 3s ease-in-out infinite;
-  height: 1.15em;
-  width: auto;
-  vertical-align: middle;
-  object-fit: contain;
-}
-
 .publications ol.bibliography li .author,
 .publications ol.bibliography li .periodical {
   font-size: 14px;
