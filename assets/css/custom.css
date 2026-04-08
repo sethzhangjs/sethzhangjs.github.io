@@ -81,29 +81,6 @@
 .edu-flip-inner {
   position: relative;
   width: 100%;
-  padding-left: 0;
-  transition: padding-left 0.4s ease;
-}
-
-.edu-flip-inner::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 100%;
-  background: var(--school-color, #002D72);
-  border-radius: 1px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.edu-flip-card:not([data-effect="flip"]):not([data-flip="disabled"]):hover .edu-flip-inner {
-  padding-left: 10px;
-}
-
-.edu-flip-card:not([data-effect="flip"]):not([data-flip="disabled"]):hover .edu-flip-inner::before {
-  opacity: 1;
 }
 
 /* --- Slide-down (default) --- */
