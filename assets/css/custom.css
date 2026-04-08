@@ -72,44 +72,96 @@
   margin: 0 !important;
 }
 
-/* Education flip card */
+/* Education card hover effect
+   Default: slide-down. Add data-effect="flip" on .edu-flip-card for 3-D flip. */
 .edu-flip-card {
-  perspective: 800px;
   max-width: 60%;
 }
 
 .edu-flip-inner {
   position: relative;
   width: 100%;
+  padding-left: 0;
+  transition: padding-left 0.4s ease;
+}
+
+.edu-flip-inner::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--school-color, #002D72);
+  border-radius: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.edu-flip-card:not([data-effect="flip"]):not([data-flip="disabled"]):hover .edu-flip-inner {
+  padding-left: 10px;
+}
+
+.edu-flip-card:not([data-effect="flip"]):not([data-flip="disabled"]):hover .edu-flip-inner::before {
+  opacity: 1;
+}
+
+/* --- Slide-down (default) --- */
+.edu-flip-back {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.88rem;
+  color: inherit;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  transition: max-height 0.4s ease, opacity 0.35s ease, padding-top 0.3s ease;
+  padding-top: 0;
+}
+
+.edu-flip-card:not([data-effect="flip"]):not([data-flip="disabled"]):hover .edu-flip-back {
+  max-height: 300px;
+  opacity: 1;
+  padding-top: 6px;
+}
+
+/* --- Flip (data-effect="flip") --- */
+.edu-flip-card[data-effect="flip"] {
+  perspective: 800px;
+}
+
+.edu-flip-card[data-effect="flip"] .edu-flip-inner {
   transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
 
-.edu-flip-card:not([data-flip="disabled"]):hover .edu-flip-inner {
+.edu-flip-card[data-effect="flip"]:hover .edu-flip-inner {
   transform: rotateY(180deg);
 }
 
-.edu-flip-front {
+.edu-flip-card[data-effect="flip"] .edu-flip-front {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
 
-.edu-flip-back {
+.edu-flip-card[data-effect="flip"] .edu-flip-back {
   position: absolute;
   inset: 0;
+  max-height: none;
+  overflow: visible;
+  opacity: 1;
+  margin-top: 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  display: flex;
-  flex-direction: column;
+  transition: none;
   justify-content: center;
-  font-size: 0.88rem;
-  color: #555;
-  line-height: 1.6;
-  overflow-wrap: break-word;
-  word-break: break-word;
 }
 
+/* --- Shared --- */
 .edu-flip-back > span {
   display: block;
   white-space: normal;
@@ -117,7 +169,6 @@
 
 .edu-flip-back .edu-back-label {
   font-weight: 600;
-  color: #333;
 }
 
 .edu-flip-front p,
