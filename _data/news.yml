@@ -1,5 +1,9 @@
 main:
-  
+
+  - date: "Apr. 2026"
+    short: "A paper was accepted to CHIL 2026."
+    detail: "Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context."
+
   - date: "Mar. 2026"
     short: "Began employment at Johns Hopkins University."
     detail: "Research Assistant in the lab of Prof. Michael Oberst."
