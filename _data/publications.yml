@@ -1,29 +1,46 @@
 main:
-
-  - title: "Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context"
-    authors: "Andrew Wang, Jiashuo Zhang, Michael Oberst"
-    venue_short: CHIL
-    venue: "7th Annual Conference on Health, Inference, and Learning"
-    year: 2026
-    doi: https://arxiv.org/abs/2509.19671
-    pdf: https://arxiv.org/pdf/2509.19671
-    image: ./assets/img/pub/pub_chestxray.png
-
-  - title: "Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from LDCT"
-    authors: "Yifei Zhang, Jiashuo Zhang, Mojtaba Safari, Xiaofeng Yang, Liang Zhao"
-    venue_short: arXiv
-    venue: "arXiv preprint"
-    year: 2025
-    doi: https://arxiv.org/abs/2511.06625
-    pdf: https://arxiv.org/pdf/2511.06625
-    image: ./assets/img/pub/pub_ldct.png
-
-  - title: "MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid Binding Residues of Proteins"
-    authors: "Jiashuo Zhang, Ruheng Wang, Leyi Wei"
-    venue_short: JCIM
-    venue: "Journal of Chemical Information and Modeling"
-    year: 2024
-    doi: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01471
-    pdf: https://drive.google.com/file/d/1WT6drQqmoxGttqFk27Ap6rthB_IoE_hR/view
-    image: ./assets/img/pub/pub_muclipred.png
-    code: https://github.com/sethzhangjs/MucLiPred
+- title: Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context
+  authors: Andrew Wang, Jiashuo Zhang, Michael Oberst
+  venue_short: CHIL
+  venue: 7th Annual Conference on Health, Inference, and Learning
+  year: 2026
+  doi: https://arxiv.org/abs/2509.19671
+  pdf: https://arxiv.org/pdf/2509.19671
+  image: ./assets/img/pub/pub_chestxray.png
+  tldr: Clinical context is used to provide a more holistic evaluation of current
+    state-of-the-art SOTA models for CXR diagnosis and it is demonstrated that performance
+    degrades when the correlation is broken between prior context and the current
+    CXR label, suggesting that model performance may depend in part on inference of
+    pre-CXR clinical context.
+  tldr_source: semantic_scholar
+  tldr_url: https://www.semanticscholar.org/paper/98ba61ce6beff19d655795abb7897a2100767550
+- title: Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from
+    LDCT
+  authors: Yifei Zhang, Jiashuo Zhang, Mojtaba Safari, Xiaofeng Yang, Liang Zhao
+  venue_short: arXiv
+  venue: arXiv preprint
+  year: 2025
+  doi: https://arxiv.org/abs/2511.06625
+  pdf: https://arxiv.org/pdf/2511.06625
+  image: ./assets/img/pub/pub_ldct.png
+  tldr: An Explainable Cross-Disease Reasoning Framework is proposed that enables
+    interpretable cardiopulmonary risk assessment from a single LDCT scan, bridging
+    the gap between image-based prediction and mechanism-based medical interpretation.
+  tldr_source: semantic_scholar
+  tldr_url: https://www.semanticscholar.org/paper/bebf67ef394de09e8742676867e4c43f0caaad9e
+- title: 'MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid
+    Binding Residues of Proteins'
+  authors: Jiashuo Zhang, Ruheng Wang, Leyi Wei
+  venue_short: JCIM
+  venue: Journal of Chemical Information and Modeling
+  year: 2024
+  doi: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01471
+  pdf: https://drive.google.com/file/d/1WT6drQqmoxGttqFk27Ap6rthB_IoE_hR/view
+  image: ./assets/img/pub/pub_muclipred.png
+  code: https://github.com/sethzhangjs/MucLiPred
+  tldr: A novel deep learning model equipped with a dual contrastive learning mechanism
+    aimed at improving the prediction of multiple molecule-protein interactions and
+    the identification of potential molecule-binding residues, which represents a
+    significant advancement in protein-molecule interaction prediction.
+  tldr_source: semantic_scholar
+  tldr_url: https://www.semanticscholar.org/paper/b1b83ec1ec099e492f436d66d907744e67cb106f

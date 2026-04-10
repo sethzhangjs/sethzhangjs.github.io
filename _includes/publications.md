@@ -27,11 +27,14 @@
     <div class="author">{{ link.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
     <div class="periodical"><em>{{ link.venue }}</em>{% if link.year %} · {{ link.year }}{% endif %}</div>
     <div class="links" style="margin-top:4px;">
+      {% if link.tldr %}
+      <a href="javascript:void(0)" class="btn btn-sm z-depth-0 pub-tldr-btn" style="font-size:12px;" onclick="toggleTldr(this)">TLDR</a>
+      {% endif %}
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       {% endif %}
       {% if link.code %}
-      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">CODE</a>
       {% endif %}
       {% if link.page %}
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
@@ -43,6 +46,14 @@
       <strong><i style="color:#e74d3c">{{ link.notes }}</i></strong>
       {% endif %}
     </div>
+    {% if link.tldr %}
+    <div class="pub-tldr-body">
+      <div class="pub-tldr-content">
+        {% if link.tldr_source == "semantic_scholar" %}<div class="pub-tldr-source">{% if link.tldr_url %}<a href="{{ link.tldr_url }}" target="_blank" rel="noopener">Powered by Semantic Scholar <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:9px;"></i></a>{% else %}Powered by Semantic Scholar{% endif %}</div>{% endif %}
+        {{ link.tldr }}
+      </div>
+    </div>
+    {% endif %}
   </div>
 
 </div>
@@ -114,3 +125,12 @@
 })();
 </script>
 {% endif %}
+
+<script>
+function toggleTldr(btn) {
+  var body = btn.closest('.links').nextElementSibling;
+  var isOpen = body.classList.contains('pub-tldr-open');
+  body.classList.toggle('pub-tldr-open', !isOpen);
+  btn.classList.toggle('pub-tldr-btn-active', !isOpen);
+}
+</script>

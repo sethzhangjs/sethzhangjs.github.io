@@ -1,3 +1,53 @@
+/* Publications TLDR */
+.pub-tldr-body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease, opacity 0.25s ease, margin-top 0.25s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.pub-tldr-body.pub-tldr-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 6px;
+}
+
+.pub-tldr-content {
+  min-height: 0;
+  overflow: hidden;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  padding: 8px 10px;
+  background: #f5f7fa;
+  border-left: 3px solid #002D72;
+  border-radius: 0 4px 4px 0;
+}
+
+.pub-tldr-source {
+  font-size: 11px;
+  font-weight: 600;
+  color: #002D72;
+  margin-bottom: 4px;
+}
+
+.pub-tldr-source a {
+  color: #002D72;
+  text-decoration: none;
+}
+
+.pub-tldr-source a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+.pub-tldr-btn-active {
+  background: #002D72 !important;
+  color: #fff !important;
+  border-color: #002D72 !important;
+}
+
 /* Publications pagination */
 .pub-pagination {
   display: flex;
