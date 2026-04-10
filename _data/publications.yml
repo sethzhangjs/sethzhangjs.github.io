@@ -2,7 +2,7 @@ main:
 - title: Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context
   authors: Andrew Wang, Jiashuo Zhang, Michael Oberst
   venue_short: CHIL
-  venue: 7th Annual Conference on Health, Inference, and Learning
+  venue: The 7th Annual Conference on Health, Inference, and Learning
   year: 2026
   doi: https://arxiv.org/abs/2509.19671
   pdf: https://arxiv.org/pdf/2509.19671
