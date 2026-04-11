@@ -50,6 +50,14 @@ defaults:
       path: "files"
     values:
       sitemap: false
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+  - scope:
+      path: "googlee9bf8160cee322e5.html"
+    values:
+      sitemap: false
 
 exclude:
   - Gemfile
