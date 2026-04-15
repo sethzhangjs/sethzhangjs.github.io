@@ -1,7 +1,18 @@
 main:
 
+  - title: "Development and Evaluation of an AI Agent to Augment Multidisciplinary Care Teams in Shared Decision-Making for Improving Cardiovascular Health"
+    venue: "Welch Center Research Day"
+    venue_url: https://publichealth.jhu.edu/welch-center-for-prevention-epidemiology-and-clinical-research/welch-center-research-day
+    venue_short: Welch Center
+    authors: "Jiashuo Zhang, Erik Skalnes, Andrea Orellana, Seth Martin, Yvonne Commodore-Mensah, Cheryl Dennison Himmelfarb, Yuling Chen, Michael Oberst"
+    type: Poster
+    date: "April 2026"
+    location: Baltimore, MD
+    poster_url: https://drive.google.com/file/d/1InnqpAn_fuOOrlrvIsy6nI8tUbqgLohZ/view?usp=sharing
+
   - title: "Guideline and Evidence-Based Shared Decision-Making: Healthcare Knowledge Q&A System"
     venue: "The 9th Annual Johns Hopkins Research Symposium on Engineering in Healthcare"
+    venue_url: https://malonecenter.jhu.edu/johns-hopkins-malone-center-2025-symposium/
     venue_short: JHU
     authors: "Jiashuo Zhang, Erik Skalnes, Yvonne Commodore-Mensah, Cheryl Dennison Himmelfarb, Yuling Chen, Michael Oberst"
     type: Poster

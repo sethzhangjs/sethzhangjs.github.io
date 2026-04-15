@@ -1,6 +1,10 @@
 main:
 
   - date: "Apr. 2026"
+    short: "Presented a poster at Welch Center Research Day."
+    detail: "Presented 'Development and Evaluation of an AI Agent to Augment Multidisciplinary Care Teams in Shared Decision-Making for Improving Cardiovascular Health' at Welch Center Research Day."
+
+  - date: "Apr. 2026"
     short: "A paper was accepted to CHIL 2026."
     detail: "Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context."
 
