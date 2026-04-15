@@ -10,7 +10,7 @@
   <div>
     <div class="title">{% if item.poster_url %}<a href="{{ item.poster_url }}" target="_blank">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</div>
     <div class="author">{{ item.authors | replace: "Jiashuo Zhang", "<strong style='font-weight:550;'>Jiashuo Zhang</strong>" }}</div>
-    <div class="periodical"><em>{% if item.venue_url %}<a href="{{ item.venue_url }}" target="_blank">{{ item.venue }}</a>{% else %}{{ item.venue }}{% endif %}</em>{% if item.type %} &middot; {{ item.type }}{% endif %}</div>
+    <div class="periodical"><em>{% if item.venue_url %}<a href="{{ item.venue_url }}" target="_blank" style="color:inherit;text-decoration:none;">{{ item.venue }}</a>{% else %}{{ item.venue }}{% endif %}</em>{% if item.type %} &middot; {{ item.type }}{% endif %}</div>
     <div class="periodical">{{ item.date }}{% if item.location %} · {{ item.location }}{% endif %}</div>
     {% if item.pdf %}
     <div class="links" style="margin-top:4px;">
