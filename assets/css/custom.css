@@ -346,6 +346,28 @@ section table tr:last-child td {
   margin-bottom: 0 !important;
 }
 
+/* CV pill badge */
+.cv-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 10px;
+  border: 1.5px solid #002D72;
+  border-radius: 99px;
+  font-size: 0.82em;
+  color: #002D72;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: background 0.18s ease, color 0.18s ease;
+  white-space: nowrap;
+}
+
+.cv-pill:hover {
+  background: #002D72;
+  color: #fff;
+  text-decoration: none;
+}
+
 /* Wider layout - desktop only */
 @media screen and (min-width: 961px) {
   .wrapper {

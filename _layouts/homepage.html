@@ -71,36 +71,25 @@
 
         <br>
 
-        <div class="social-icons" style="display:flex; flex-direction:column; align-items:center; gap:4px;">
-          <div style="display:flex; flex-wrap:nowrap; justify-content:center;">
-            {% if site.google_scholar %}
-            <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
-            {% endif %}
-            {% if site.semantic_scholar %}
-            <a href="{{ site.semantic_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-semantic-scholar" style="font-size:1.2rem"></i></a>
-            {% endif %}
-            {% if site.orcid %}
-            <a href="{{ site.orcid }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
-            {% endif %}
-            {% if site.dblp %}
-            <a href="{{ site.dblp }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-dblp" style="font-size:1.2rem"></i></a>
-            {% endif %}
-          </div>
-          <div style="display:flex; flex-wrap:nowrap; justify-content:center;">
-            {% if site.github_link %}
-            <a href="{{ site.github_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-github"></i></a>
-            {% endif %}
-            {% if site.x_link %}
-            <a href="{{ site.x_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-x-twitter"></i></a>
-            {% endif %}
-            {% if site.linkedin %}
-            <a href="{{ site.linkedin }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
-            {% endif %}
-            {% if site.cv_link %}
-            <a href="{{ site.cv_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="far fa-file-lines"></i></a>
-            {% endif %}
-          </div>
+        <div class="social-icons" style="display:flex; justify-content:center; flex-wrap:nowrap;">
+          {% if site.orcid %}
+          <a href="{{ site.orcid }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.google_scholar %}
+          <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.github_link %}
+          <a href="{{ site.github_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a href="{{ site.linkedin }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
         </div>
+        {% if site.cv_link %}
+        <div style="display:flex; justify-content:center; margin-top:8px;">
+          <a href="{{ site.cv_link }}" target="_blank" rel="noopener" class="cv-pill"><i class="far fa-file-lines"></i> Curriculum Vitae</a>
+        </div>
+        {% endif %}
         <br>
 
         <div style="margin-top: 16px; display: flex; justify-content: center; pointer-events: none;">
