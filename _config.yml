@@ -31,7 +31,7 @@ favicon_dark: ./assets/img/favicon_io/favicon.ico
 
 # Options
 enable_footnote: true
-auto_dark_mode: true
+auto_dark_mode: false
 font: "Serif"
 
 # Use minimal-light as remote theme for GitHub Pages
