@@ -73,16 +73,19 @@
 
         <div class="social-icons" style="display:flex; justify-content:center; flex-wrap:nowrap;">
           {% if site.orcid %}
-          <a href="{{ site.orcid }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
+          <a href="{{ site.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
           {% endif %}
           {% if site.google_scholar %}
-          <a href="{{ site.google_scholar }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+          <a href="{{ site.google_scholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
           {% endif %}
           {% if site.github_link %}
-          <a href="{{ site.github_link }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-github"></i></a>
+          <a href="{{ site.github_link }}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
           {% endif %}
           {% if site.linkedin %}
-          <a href="{{ site.linkedin }}" target="_blank" rel="noopener" style="padding:0 4px;"><i class="fab fa-linkedin"></i></a>
+          <a href="{{ site.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
+          {% if site.x_link %}
+          <a href="{{ site.x_link }}" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
           {% endif %}
         </div>
         {% if site.cv_link %}
