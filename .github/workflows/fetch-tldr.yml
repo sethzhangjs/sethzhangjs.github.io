@@ -1,0 +1,34 @@
+name: Fetch TLDR from Semantic Scholar
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '_data/publications.yml'
+
+jobs:
+  fetch-tldr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - run: pip install pyyaml
+
+      - run: python scripts/fetch_tldr.py
+
+      - name: Commit updated TLDRs if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet _data/publications.yml || (
+            git add _data/publications.yml &&
+            git commit -m "auto: fetch TLDRs from Semantic Scholar" &&
+            git push
+          )

@@ -1,0 +1,19 @@
+main:
+  - name: Visilant
+    url: https://www.visilant.org/
+    logo: assets/img/emp/visilant.png
+    period: "Feb. 2026 – Present"
+    location: Baltimore, MD
+    role: Machine Learning Engineer
+    type: Part-time
+    flip_disabled: true
+  - name: Bosch
+    url: https://www.bosch-connected-industry.com/de/en
+    logo: assets/img/emp/bosch.png
+    period: "Nov. 2023 – Mar. 2024"
+    location: Suzhou, China
+    role: Software Engineer
+    type: Internship
+    details:
+      - "Bosch Connected Industry, Engineering Software."
+      - "BCI/ESW1-CN Team."
