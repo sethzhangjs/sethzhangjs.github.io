@@ -1,4 +1,4 @@
-<h2 id="publications" class="pub-section-heading"><a href="https://scholar.google.com/citations?user=ao8Tf0gAAAAJ&hl=en" target="_blank" rel="noopener">Publications</a></h2>
+<h2 id="publications" class="pub-section-heading"><a href="https://scholar.google.com/citations?user=ao8Tf0gAAAAJ&hl=en" target="_blank" rel="noopener">Publications & Preprints</a></h2>
 
 <div class="publications">
 <ol class="bibliography">
