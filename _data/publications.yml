@@ -7,6 +7,7 @@ main:
   doi: https://arxiv.org/abs/2509.19671
   pdf: https://arxiv.org/pdf/2509.19671
   image: ./assets/img/pub/pub_chestxray.png
+  code: https://github.com/oberst-lab/revisiting-cxr-performance
   tldr: Clinical context is used to provide a more holistic evaluation of current
     state-of-the-art SOTA models for CXR diagnosis and it is demonstrated that performance
     degrades when the correlation is broken between prior context and the current
