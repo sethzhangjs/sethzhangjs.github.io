@@ -8,6 +8,9 @@ main:
   pdf: https://arxiv.org/pdf/2509.19671
   image: ./assets/img/pub/pub_chestxray.png
   code: https://github.com/oberst-lab/revisiting-cxr-performance
+  tags:
+    - Evaluation
+    - Causality
   tldr: Clinical context is used to provide a more holistic evaluation of current
     state-of-the-art SOTA models for CXR diagnosis and it is demonstrated that performance
     degrades when the correlation is broken between prior context and the current
@@ -24,6 +27,9 @@ main:
   doi: https://arxiv.org/abs/2511.06625
   pdf: https://arxiv.org/pdf/2511.06625
   image: ./assets/img/pub/pub_ldct.png
+  tags:
+    - LLM
+    - Multimodal
   tldr: An Explainable Cross-Disease Reasoning Framework is proposed that enables
     interpretable cardiopulmonary risk assessment from a single LDCT scan, bridging
     the gap between image-based prediction and mechanism-based medical interpretation.
@@ -40,6 +46,8 @@ main:
   pdf: https://drive.google.com/file/d/1WT6drQqmoxGttqFk27Ap6rthB_IoE_hR/view
   image: ./assets/img/pub/pub_muclipred.png
   code: https://github.com/sethzhangjs/MucLiPred
+  tags:
+    - Bioinformatics
   tldr: A novel deep learning model equipped with a dual contrastive learning mechanism
     aimed at improving the prediction of multiple molecule-protein interactions and
     the identification of potential molecule-binding residues, which represents a

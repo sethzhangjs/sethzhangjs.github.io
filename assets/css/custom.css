@@ -83,6 +83,31 @@
 .pub-note {
   color: #e74d3c;
 }
+.pub-tags {
+  display: inline;
+  margin-left: 6px;
+}
+.pub-tag {
+  display: inline-block;
+  padding: 1px 6px;
+  margin-right: 3px;
+  border-radius: 4px;
+  font-size: 10px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+.pub-tag-blue    { background-color: #e3f0fd; color: #1f5b9c; border-color: #cfe2f7; }
+.pub-tag-green   { background-color: #e6f4e6; color: #2e6b2e; border-color: #d2e8d2; }
+.pub-tag-purple  { background-color: #ece0fb; color: #5a3a8e; border-color: #ddcaf1; }
+.pub-tag-orange  { background-color: #fde9d4; color: #8b4a13; border-color: #f6d6b3; }
+.pub-tag-pink    { background-color: #fce0eb; color: #8b2c5a; border-color: #f4c9d8; }
+.pub-tag-teal    { background-color: #d6f0ec; color: #2a6b66; border-color: #bfe3dd; }
+.pub-tag-default { background-color: #eeeeee; color: #555;    border-color: #dddddd; }
 .author-self {
   font-weight: 550;
 }

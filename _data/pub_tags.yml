@@ -1,0 +1,9 @@
+# Central registry: tag name -> color
+# Available colors: blue, green, purple, orange, pink, teal
+# Tags not listed here fall back to the "default" style.
+
+Evaluation: orange
+Causality: purple
+LLM: blue
+Multimodal: pink
+Bioinformatics: green

@@ -21,7 +21,7 @@
   </div>
 
   <div class="pub-text">
-    <div class="title">{% if link.doi %}<a href="{{ link.doi }}" target="_blank" rel="noopener">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
+    <div class="title">{% if link.doi %}<a href="{{ link.doi }}" target="_blank" rel="noopener">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}{% if link.tags %}<span class="pub-tags">{% for tag in link.tags %}{% assign tag_color = site.data.pub_tags[tag] | default: "default" %}<span class="pub-tag pub-tag-{{ tag_color }}">{{ tag }}</span>{% endfor %}</span>{% endif %}</div>
     <div class="author">{% include author-highlight.html authors=link.authors %}</div>
     <div class="periodical"><em>{{ link.venue }}</em>{% if link.year %} · {{ link.year }}{% endif %}</div>
     <div class="links pub-links">
