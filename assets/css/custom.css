@@ -541,7 +541,7 @@ section table tr:last-child td {
   gap: 5px;
   padding: 2px 10px;
   border: 1.5px solid var(--color-primary);
-  border-radius: 99px;
+  border-radius: 4px;
   font-size: 0.82em;
   color: var(--color-primary);
   text-decoration: none;
