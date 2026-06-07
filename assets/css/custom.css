@@ -170,12 +170,6 @@
   justify-content: center;
   margin-top: 8px;
 }
-.globe-container {
-  margin-top: 16px;
-  display: flex;
-  justify-content: center;
-  pointer-events: none;
-}
 .site-footnote {
   text-align: right;
   font-size: 0.58rem;
