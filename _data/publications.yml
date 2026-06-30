@@ -12,11 +12,10 @@ main:
   tags:
   - Evaluation
   - Causality
-  tldr: Clinical context is used to provide a more holistic evaluation of current
-    state-of-the-art SOTA models for CXR diagnosis and it is demonstrated that performance
-    degrades when the correlation is broken between prior context and the current
-    CXR label, suggesting that model performance may depend in part on inference of
-    pre-CXR clinical context.
+  tldr: Clinical context is used to provide a more holistic evaluation of models for
+    CXR diagnosis, and it is demonstrated that performance degrades when the correlation
+    is broken between prior context and the current CXR label, suggesting that model
+    performance is highly sensitive to the underlying distribution of clinical context.
   tldr_source: semantic_scholar
   tldr_url: https://www.semanticscholar.org/paper/98ba61ce6beff19d655795abb7897a2100767550
 - title: Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from
