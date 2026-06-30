@@ -8,6 +8,7 @@ main:
   pdf: https://arxiv.org/pdf/2509.19671
   image: ./assets/img/pub/pub_chestxray.png
   code: https://github.com/oberst-lab/revisiting-cxr-performance
+  poster: ./assets/poster/CHIL-2026-Poster.pdf
   tags:
   - Evaluation
   - Causality

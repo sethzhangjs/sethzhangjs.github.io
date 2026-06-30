@@ -34,6 +34,9 @@
       {% if link.code %}
       <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">CODE</a>
       {% endif %}
+      {% if link.poster %}
+      <a href="{{ link.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">POSTER</a>
+      {% endif %}
       {% if link.page %}
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Project Page</a>
       {% endif %}
