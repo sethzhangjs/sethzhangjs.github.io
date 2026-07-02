@@ -28,14 +28,14 @@
       {% if link.tldr %}
       <a href="javascript:void(0)" class="btn btn-sm z-depth-0 pub-tldr-btn" onclick="toggleTldr(this)">TLDR</a>
       {% endif %}
+      {% if link.poster %}
+      <a href="{{ link.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">POSTER</a>
+      {% endif %}
       {% if link.pdf %}
       <a href="{{ link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
       {% if link.code %}
       <a href="{{ link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank">CODE</a>
-      {% endif %}
-      {% if link.poster %}
-      <a href="{{ link.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank">POSTER</a>
       {% endif %}
       {% if link.page %}
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Project Page</a>
