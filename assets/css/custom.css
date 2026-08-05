@@ -160,15 +160,28 @@
   color: var(--color-name);
   font-size: 1.1rem;
 }
-.social-icons {
+.social-icons,
+.cv-container,
+.globe-container {
   display: flex;
   justify-content: center;
+}
+.social-icons {
   flex-wrap: nowrap;
 }
 .cv-container {
-  display: flex;
-  justify-content: center;
   margin-top: 8px;
+}
+.globe-container {
+  margin-top: 16px;
+  /* Decorative only: suppresses the vendor backlink and drag-to-spin. */
+  pointer-events: none;
+}
+/* The globe spins continuously in a fixed sidebar, so it never scrolls away. */
+@media (prefers-reduced-motion: reduce) {
+  .globe-container {
+    display: none;
+  }
 }
 .site-footnote {
   text-align: right;

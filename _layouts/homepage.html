@@ -18,6 +18,11 @@
     <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" />
     <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
 
+    {% if site.mapmyvisitors_id %}
+    <!-- The globe script is discovered late (mid-body), so warm its origin early. -->
+    <link rel="preconnect" href="https://mapmyvisitors.com">
+    {% endif %}
+
     <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css crossorigin=anonymous>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -99,6 +104,16 @@
         </div>
         {% endif %}
         <br>
+
+        {% if site.mapmyvisitors_id %}
+        <!-- Visitor globe. globe.js anchors on its own id and inserts the globe
+             after itself; async keeps a slow or dead vendor host from stalling
+             page rendering, which is what killed ClustrMaps here (see 61990d2). -->
+        <div class="globe-container">
+          <script id="mmvst_globe" async
+                  src="https://mapmyvisitors.com/globe.js?d={{ site.mapmyvisitors_id }}&w=120"></script>
+        </div>
+        {% endif %}
 
       </header>
       <section>
