@@ -12,9 +12,9 @@
 <div class="pres-item">
 
   <div>
-    <div class="title">{% if item.link %}<a href="{{ item.link }}" target="_blank">{{ item.title }}</a>{% else %}<span class="pres-title-plain">{{ item.title }}</span>{% endif %}</div>
-    <div class="author">{% include author-highlight.html authors=item.authors %}</div>
+    <div class="title"><span class="pres-title-plain">{{ item.title }}</span></div>
     <div class="periodical"><em>{% if item.venue_url %}<a href="{{ item.venue_url }}" target="_blank">{{ item.venue }}</a>{% else %}{{ item.venue }}{% endif %}</em>{% if item.location %} &middot; {{ item.location }}{% endif %}{% if item.date %} &middot; {{ item.date }}{% endif %}</div>
+    {% if item.poster_url or item.pdf %}
     <div class="links pub-links">
       {% if item.poster_url %}
       <a href="{{ item.poster_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">POSTER</a>
@@ -23,6 +23,7 @@
       <a href="{{ item.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
       {% endif %}
     </div>
+    {% endif %}
   </div>
 
 </div>

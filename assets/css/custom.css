@@ -122,11 +122,23 @@
 }
 
 /* Presentation items */
+.publications ol.bibliography li[data-pres-index] {
+  min-height: 0;
+}
 .pres-item {
   margin-bottom: 1.5rem;
 }
+/* Titles read as plain bold body text, matching the Services / Honors entries */
+.pres-item .title,
+.pres-item .title a,
 .pres-title-plain {
-  color: #39c;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pres-item .title a:hover {
+  color: inherit;
+  text-decoration: underline;
 }
 .periodical a {
   color: inherit;

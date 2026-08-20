@@ -18,11 +18,13 @@ Prior to that, I completed my B.E. with honors in Software Engineering from <img
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/presentations.md %}
-
 {% include_relative _includes/experience.md %}
 
 {% include_relative _includes/education.md %}
+
+{% include_relative _includes/presentations.md %}
+
+{% include_relative _includes/services.md %}
 
 {% include_relative _includes/honors.md %}
 

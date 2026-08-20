@@ -1,0 +1,6 @@
+# Academic service: reviewing, organizing, volunteering, mentoring, etc.
+# role  - what you did (Volunteer, Reviewer, ...)
+# venue - conference/journal, year included (e.g. "MLHC 2026")
+main:
+  - role: Volunteer
+    venue: MLHC 2026

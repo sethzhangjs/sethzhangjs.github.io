@@ -11,7 +11,6 @@ main:
   poster: ./assets/poster/CHIL-2026-Poster.pdf
   tags:
   - Evaluation
-  - Causality
   tldr: Clinical context is used to provide a more holistic evaluation of models for
     CXR diagnosis, and it is demonstrated that performance degrades when the correlation
     is broken between prior context and the current CXR label, suggesting that model
@@ -28,7 +27,6 @@ main:
   pdf: https://arxiv.org/pdf/2511.06625
   image: ./assets/img/pub/pub_ldct.png
   tags:
-  - LLM
   - Multimodal
   tldr: An Explainable Cross-Disease Reasoning Framework is proposed that enables
     interpretable cardiopulmonary risk assessment from a single LDCT scan, bridging
