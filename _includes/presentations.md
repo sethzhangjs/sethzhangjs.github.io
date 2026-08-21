@@ -12,17 +12,10 @@
 <div class="pres-item">
 
   <div>
-    <div class="title"><span class="pres-title-plain">{{ item.title }}</span></div>
-    <div class="periodical"><em>{% if item.venue_url %}<a href="{{ item.venue_url }}" target="_blank">{{ item.venue }}</a>{% else %}{{ item.venue }}{% endif %}</em>{% if item.location %} &middot; {{ item.location }}{% endif %}{% if item.date %} &middot; {{ item.date }}{% endif %}</div>
-    {% if item.poster_url or item.pdf %}
-    <div class="links pub-links">
-      {% if item.poster_url %}
-      <a href="{{ item.poster_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">POSTER</a>
-      {% endif %}
-      {% if item.pdf %}
-      <a href="{{ item.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank">PDF</a>
-      {% endif %}
-    </div>
+    <div class="title">{{ item.title }}</div>
+    <div class="periodical"><em>{{ item.venue }}</em>{% if item.type %} &middot; {{ item.type }}{% endif %}</div>
+    {% if item.location or item.date %}
+    <div class="periodical pres-meta">{{ item.location }}{% if item.location and item.date %} &middot; {% endif %}{{ item.date }}</div>
     {% endif %}
   </div>
 
