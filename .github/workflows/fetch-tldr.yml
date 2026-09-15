@@ -22,6 +22,8 @@ jobs:
       - run: pip install pyyaml
 
       - run: python scripts/fetch_tldr.py
+        env:
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
 
       - name: Commit updated TLDRs if changed
         run: |
