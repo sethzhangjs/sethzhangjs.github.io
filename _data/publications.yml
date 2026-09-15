@@ -1,4 +1,17 @@
 main:
+- title: 'Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation
+    in Clinical Question Answering'
+  authors: Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst
+  venue_short: arXiv
+  venue: arXiv preprint
+  year: 2026
+  doi: https://arxiv.org/abs/2609.15964
+  pdf: https://arxiv.org/pdf/2609.15964
+  image: ./assets/img/pub/pub_verifiable.png
+  code: https://github.com/oberst-lab/verifiable-by-construction
+  tags:
+  - Evaluation
+  - LLM
 - title: Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context
   authors: Andrew Wang, Jiashuo Zhang, Michael Oberst
   venue_short: CHIL
@@ -28,6 +41,7 @@ main:
   image: ./assets/img/pub/pub_ldct.png
   tags:
   - Multimodal
+  - LLM
   tldr: An Explainable Cross-Disease Reasoning Framework is proposed that enables
     interpretable cardiopulmonary risk assessment from a single LDCT scan, bridging
     the gap between image-based prediction and mechanism-based medical interpretation.
