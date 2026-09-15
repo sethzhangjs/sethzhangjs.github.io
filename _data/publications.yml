@@ -45,11 +45,11 @@ main:
   tags:
   - Multimodal
   - LLM
-  tldr: An Explainable Cross-Disease Reasoning Framework is proposed that enables
-    interpretable cardiopulmonary risk assessment from a single LDCT scan, bridging
-    the gap between image-based prediction and mechanism-based medical interpretation.
+  tldr: An Explainable Cross-Disease Reasoning Framework for cardiovascular risk assessment
+    from LDCT is proposed, which provides an auditable approach to cross-disease cardiovascular
+    risk assessment from LDCT.
   tldr_source: semantic_scholar
-  tldr_url: https://www.semanticscholar.org/paper/bebf67ef394de09e8742676867e4c43f0caaad9e
+  tldr_url: https://www.semanticscholar.org/paper/8c828fbf3c69e70c97bd2a4ddaf5de51ab1c7a82
 - title: 'MucLiPred: Multi-Level Contrastive Learning for Predicting Nucleic Acid
     Binding Residues of Proteins'
   authors: Jiashuo Zhang, Ruheng Wang, Leyi Wei
