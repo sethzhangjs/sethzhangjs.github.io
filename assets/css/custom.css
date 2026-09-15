@@ -69,6 +69,12 @@
   object-fit: contain;
   display: block;
   cursor: zoom-in;
+  /* Set per entry with `image_scale` (a percentage) in publications.yml.
+     A figure whose aspect ratio nearly matches the 200x130 box gets no
+     letterboxing from object-fit: contain and fills it edge to edge, so
+     scaling it down leaves a proportional margin on all four sides.
+     Scaling each axis separately keeps that margin even. */
+  transform: scale(var(--pub-image-scale, 1));
 }
 .pub-text {
   flex: 1;

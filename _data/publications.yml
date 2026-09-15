@@ -8,6 +8,7 @@ main:
   doi: https://arxiv.org/abs/2609.15964
   pdf: https://arxiv.org/pdf/2609.15964
   image: ./assets/img/pub/pub_verifiable.png
+  image_scale: 80
   code: https://github.com/oberst-lab/verifiable-by-construction
   tags:
   - Evaluation
@@ -20,6 +21,7 @@ main:
   doi: https://arxiv.org/abs/2509.19671
   pdf: https://arxiv.org/pdf/2509.19671
   image: ./assets/img/pub/pub_chestxray.png
+  image_scale: 90
   code: https://github.com/oberst-lab/revisiting-cxr-performance
   poster: ./assets/poster/CHIL-2026-Poster.pdf
   tags:
@@ -39,6 +41,7 @@ main:
   doi: https://arxiv.org/abs/2511.06625
   pdf: https://arxiv.org/pdf/2511.06625
   image: ./assets/img/pub/pub_ldct.png
+  image_scale: 80
   tags:
   - Multimodal
   - LLM
@@ -57,6 +60,7 @@ main:
   doi: https://pubs.acs.org/doi/10.1021/acs.jcim.3c01471
   pdf: https://drive.google.com/file/d/1WT6drQqmoxGttqFk27Ap6rthB_IoE_hR/view
   image: ./assets/img/pub/pub_muclipred.png
+  image_scale: 90
   code: https://github.com/sethzhangjs/MucLiPred
   tags:
   - Bioinformatics

@@ -16,7 +16,7 @@
     <abbr class="badge pub-badge">{{ link.venue_short }}</abbr>
     {% endif %}
     {% if link.image %}
-    <img src="{{ link.image }}" class="pub-image" onclick="openLightbox(this.src)">
+    <img src="{{ link.image }}" class="pub-image"{% if link.image_scale %} style="--pub-image-scale: {{ link.image_scale | divided_by: 100.0 }};"{% endif %} onclick="openLightbox(this.src)">
     {% endif %}
   </div>
 
