@@ -8,11 +8,17 @@ main:
   doi: https://arxiv.org/abs/2609.15964
   pdf: https://arxiv.org/pdf/2609.15964
   image: ./assets/img/pub/pub_verifiable.png
-  image_scale: 80
+  image_scale: 75
   code: https://github.com/oberst-lab/verifiable-by-construction
   tags:
   - Evaluation
   - LLM
+  tldr: This work builds a standardized harness over four clinical practice guidelines
+    and evaluates twelve LLMs on 222 synthetic clinical questions, finding that most
+    models can attach verbatim quotes to over 90% of their claims from prompting alone,
+    apart from some lightweight models such as claude-haiku-4.5.
+  tldr_source: semantic_scholar
+  tldr_url: https://www.semanticscholar.org/paper/3421281d897daf72d7260314add1a21b0ad0b482
 - title: Revisiting Performance Claims for Chest X-Ray Models Using Clinical Context
   authors: Andrew Wang, Jiashuo Zhang, Michael Oberst
   venue_short: CHIL
