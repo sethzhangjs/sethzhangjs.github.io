@@ -2,5 +2,7 @@
 # role  - what you did (Volunteer, Reviewer, ...)
 # venue - conference/journal, year included (e.g. "MLHC 2026")
 main:
+  - role: Reviewer
+    venue: ML4H 2026
   - role: Volunteer
     venue: MLHC 2026
