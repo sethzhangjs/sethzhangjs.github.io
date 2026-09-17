@@ -28,4 +28,6 @@ Prior to that, I completed my B.E. with honors in Software Engineering from <img
 
 {% include_relative _includes/honors.md %}
 
-{% include_relative _includes/news.md %}
+{% comment %} News section hidden for now; data kept in _data/news.yml.
+Uncomment the include below to bring it back. {% endcomment %}
+{% comment %} {% include_relative _includes/news.md %} {% endcomment %}
