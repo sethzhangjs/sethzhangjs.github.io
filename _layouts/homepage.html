@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <title>{{ site.title }} | {{site.affiliation}}</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    {% if site.keywords %}
+    <meta name="keywords" content="{{ site.keywords }}">
+    {% endif %}
+    {% if site.canonical %}
+    <link rel="canonical" href="{{ site.canonical }}"/>
+    {% endif %}
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ site.favicon_dark }}" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ site.favicon }}" />
+    <script src="./assets/js/favicon-switcher.js" type="application/javascript"></script>
+
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css crossorigin=anonymous>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    {% if site.font == "Sans Serif" %}
+    <link rel="stylesheet" href="./assets/css/font_sans_serif.css">
+    {% else %}
+    <link rel="stylesheet" href="./assets/css/font.css">
+    {% endif %}
+    {% if site.auto_dark_mode %}
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/publications.css">
+    {% else %}
+    <link rel="stylesheet" href="./assets/css/style-no-dark-mode.css">
+    <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
+    {% endif %}
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap">
+    {% if site.clarity_project_id %}
+    <!-- Microsoft Clarity (heatmaps, click tracking, session recordings) -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "{{ site.clarity_project_id }}");
+    </script>
+    {% endif %}
+    {% if site.google_analytics %}
+    <!-- Google Analytics 4 (city-level location, traffic sources) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        
+        {% if site.avatar %}
+        <a class="image avatar" id="avatar-link" style="cursor:pointer;"><img src="{{ site.avatar }}" alt="avatar" id="avatar-img" /></a>
+        {% endif %}
+
+        <h1>{{ site.title }}</h1>
+        {% if site.name_chinese %}
+        <p class="name-chinese">{{ site.name_chinese }}<button onclick="speakName()" title="Hear pronunciation" class="name-chinese-btn"><i class="fas fa-volume-up"></i></button></p>
+        {% endif %}
+
+        {% if site.position %}
+        <position style="font-size:1.10rem;">{{ site.position }}</position>
+        <br>
+        {% endif %}
+        {% if site.affiliation %}
+        <autocolor>{{ site.affiliation }}</autocolor>
+        <br>
+        {% endif %}
+        {% if site.location %}
+        <span style="font-size:14px;">{{ site.location }}</span>
+        <br>
+        {% endif %}
+        {% if site.email %}
+        <email>{{ site.email }}</email>
+        {% endif %}
+        {% if site.email_personal %}
+        <br><email>{{ site.email_personal }}</email>
+        {% endif %}
+
+        <br>
+
+        <div class="social-icons">
+          {% if site.orcid %}
+          <a href="{{ site.orcid }}" target="_blank" rel="noopener"><i class="ai ai-orcid" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.google_scholar %}
+          <a href="{{ site.google_scholar }}" target="_blank" rel="noopener"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+          {% endif %}
+          {% if site.github_link %}
+          <a href="{{ site.github_link }}" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.linkedin %}
+          <a href="{{ site.linkedin }}" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          {% endif %}
+          {% if site.x_link %}
+          <a href="{{ site.x_link }}" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i></a>
+          {% endif %}
+          {% if site.bluesky_link %}
+          <a href="{{ site.bluesky_link }}" target="_blank" rel="noopener"><i class="fab fa-bluesky"></i></a>
+          {% endif %}
+        </div>
+        {% if site.cv_link %}
+        <div class="cv-container">
+          <button type="button" id="cv-toggle" class="cv-pill" aria-pressed="false">
+            <i class="far fa-file-lines"></i> <span id="cv-toggle-label">Curriculum Vitae</span>
+          </button>
+        </div>
+        {% endif %}
+        <br>
+
+      </header>
+      <section>
+
+      <div id="home-content">
+        {{ content }}
+
+        <br>
+
+        {% if site.enable_footnote %}
+        <p class="site-footnote">Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</p>
+        {% endif %}
+      </div>
+
+      {% if site.cv_link %}
+      <div id="cv-content" hidden>
+        <p class="cv-fallback">
+          Trouble viewing? <a href="{{ site.cv_link }}" target="_blank" rel="noopener">Open the PDF in a new tab</a>.
+        </p>
+        <iframe id="cv-frame" title="Curriculum Vitae" src="" loading="lazy"></iframe>
+      </div>
+      {% endif %}
+
+      </section>
+      <footer>
+
+      </footer>
+    </div>
+    <!-- Lightbox overlay -->
+    <div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:10000; align-items:center; justify-content:center; cursor:zoom-out;">
+      <img id="lightbox-img" src="" style="max-width:90vw; max-height:90vh; object-fit:contain; border-radius:6px; box-shadow:0 8px 40px rgba(0,0,0,0.5);">
+    </div>
+
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script>
+    </script>
+    <script>
+      function openLightbox(src) {
+        var lb = document.getElementById('lightbox');
+        document.getElementById('lightbox-img').src = src;
+        lb.style.display = 'flex';
+        document.addEventListener('keydown', closeLightboxOnEsc);
+      }
+      function closeLightbox() {
+        document.getElementById('lightbox').style.display = 'none';
+        document.removeEventListener('keydown', closeLightboxOnEsc);
+      }
+      function closeLightboxOnEsc(e) {
+        if (e.key === 'Escape') closeLightbox();
+      }
+    </script>
+    <script>
+      function speakName() {
+        new Audio('{{ "/assets/audio/name.m4a" | relative_url }}').play();
+      }
+
+      (function () {
+        var avatarLink = document.getElementById('avatar-link');
+        if (!avatarLink) return;
+
+        var animating = false;
+
+        avatarLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          if (animating) return;
+          animating = true;
+
+          var img = document.getElementById('avatar-img');
+          var rect = img.getBoundingClientRect();
+          var size = rect.width;
+
+          // Create floating clone
+          var clone = img.cloneNode(true);
+          clone.style.cssText = [
+            'position:fixed',
+            'left:' + rect.left + 'px',
+            'top:' + rect.top + 'px',
+            'width:' + size + 'px',
+            'height:' + size + 'px',
+            'border-radius:50%',
+            'z-index:9999',
+            'pointer-events:none',
+            'margin:0',
+            'will-change:transform',
+            'box-shadow:0 8px 32px rgba(0,0,0,0.25)'
+          ].join(';');
+          document.body.appendChild(clone);
+
+          img.style.opacity = '0';
+
+          // Show fun facts at original position
+          var funFacts = document.createElement('div');
+          var boxW = 220;
+          funFacts.style.cssText = [
+            'position:fixed',
+            'left:' + (rect.left + size / 2 - boxW / 2) + 'px',
+            'top:' + rect.top + 'px',
+            'width:' + boxW + 'px',
+            'height:' + size + 'px',
+            'display:flex',
+            'flex-direction:column',
+            'align-items:center',
+            'justify-content:center',
+            'text-align:center',
+            'font-family:Caveat,cursive',
+            'font-size:1rem',
+            'line-height:1.8',
+            'color:#555',
+            'z-index:9998',
+            'pointer-events:none',
+            'opacity:0',
+            'transition:opacity 0.4s ease'
+          ].join(';');
+          funFacts.innerHTML = 'Hit the gym 3-5x a week 💪<br>Violin for 15+ years 🎻';
+          document.body.appendChild(funFacts);
+          requestAnimationFrame(function () { funFacts.style.opacity = '1'; });
+
+          var origX = rect.left;
+          var origY = rect.top;
+
+          // Generate random waypoints
+          var numPoints = 5;
+          var waypoints = [];
+          for (var i = 0; i < numPoints; i++) {
+            waypoints.push({
+              x: size + Math.random() * (window.innerWidth - size * 3),
+              y: size + Math.random() * (window.innerHeight - size * 3),
+              r: (Math.random() - 0.5) * 900
+            });
+          }
+          // Return home
+          waypoints.push({ x: origX, y: origY, r: 0 });
+
+          var DURATION = 520;
+          var current = 0;
+          var startX = origX, startY = origY, startR = 0;
+          var startTime = null;
+
+          function ease(t) {
+            return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+          }
+
+          function step(ts) {
+            if (!startTime) startTime = ts;
+            var p = Math.min((ts - startTime) / DURATION, 1);
+            var e = ease(p);
+            var wp = waypoints[current];
+
+            clone.style.left = (startX + (wp.x - startX) * e) + 'px';
+            clone.style.top  = (startY + (wp.y - startY) * e) + 'px';
+            clone.style.transform = 'rotate(' + (startR + (wp.r - startR) * e) + 'deg)';
+
+            if (p < 1) {
+              requestAnimationFrame(step);
+            } else {
+              startX = wp.x; startY = wp.y; startR = wp.r;
+              startTime = null;
+              current++;
+              if (current < waypoints.length) {
+                requestAnimationFrame(step);
+              } else {
+                clone.remove();
+                funFacts.style.opacity = '0';
+                setTimeout(function () { funFacts.remove(); }, 400);
+                img.style.opacity = '';
+                animating = false;
+              }
+            }
+          }
+
+          requestAnimationFrame(step);
+        });
+      })();
+    </script>
+    {% if site.cv_link %}
+    <script>
+      (function () {
+        var btn = document.getElementById('cv-toggle');
+        var label = document.getElementById('cv-toggle-label');
+        var home = document.getElementById('home-content');
+        var cv = document.getElementById('cv-content');
+        var frame = document.getElementById('cv-frame');
+        var cvSrc = {{ site.cv_link | jsonify }};
+        if (!btn || !home || !cv || !frame) return;
+
+        function showCV() {
+          if (!frame.getAttribute('src')) frame.setAttribute('src', cvSrc);
+          home.hidden = true;
+          cv.hidden = false;
+          btn.setAttribute('aria-pressed', 'true');
+          label.textContent = 'Back to Homepage';
+          if (location.hash !== '#cv') history.replaceState(null, '', '#cv');
+        }
+        function showHome() {
+          cv.hidden = true;
+          home.hidden = false;
+          btn.setAttribute('aria-pressed', 'false');
+          label.textContent = 'Curriculum Vitae';
+          if (location.hash === '#cv') history.replaceState(null, '', location.pathname + location.search);
+        }
+
+        btn.addEventListener('click', function () {
+          if (cv.hidden) showCV(); else showHome();
+        });
+
+        if (location.hash === '#cv') showCV();
+      })();
+    </script>
+    {% endif %}
+    <!-- GoatCounter analytics (visitor location/country, pages, referrers) -->
+    <script data-goatcounter="https://sethzhangjs.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
+    {% if site.statcounter_project %}
+    <!-- StatCounter (visitor log with IP / ISP / organization) -->
+    <script type="text/javascript">
+      var sc_project={{ site.statcounter_project }};
+      var sc_invisible=1;
+      var sc_security="{{ site.statcounter_security }}";
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+    <noscript><div class="statcounter"><img class="statcounter"
+      src="https://c.statcounter.com/{{ site.statcounter_project }}/0/{{ site.statcounter_security }}/1/"
+      alt="" referrerPolicy="no-referrer-when-downgrade"></div></noscript>
+    {% endif %}
+  </body>
+</html>

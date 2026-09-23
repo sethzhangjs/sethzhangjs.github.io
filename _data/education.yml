@@ -1,0 +1,21 @@
+main:
+  - name: Johns Hopkins University
+    url: https://www.jhu.edu/
+    logo: assets/img/edu/jhu.png
+    color: "#002D72"
+    period: "Aug. 2024 – Dec. 2025"
+    location: Baltimore, MD
+    degree: Master of Science
+    major: Computer Science
+    gpa: "3.96 / 4.0"
+    courses: "Machine Learning for Healthcare, Machine Learning: Deep Learning, Computer Vision, Vision as Bayesian Inference, Software System Design, etc."
+  - name: Shandong University
+    url: https://www.en.sdu.edu.cn/
+    logo: assets/img/edu/sdu.png
+    color: "#C8102E"
+    period: "Sept. 2020 – June 2024"
+    location: Jinan, China
+    degree: Bachelor of Engineering
+    major: Software Engineering
+    gpa: "89.29 / 100"
+    courses: "Data Structures, Operating System, Computer Networks, Database System, Organization and Structure of Computer, Algorithm Design and Analysis, etc."

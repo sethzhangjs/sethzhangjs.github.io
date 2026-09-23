@@ -1,0 +1,28 @@
+{% assign item = include.item %}
+<tr class="entry-row">
+  <td class="entry-logo-cell">
+    <a href="{{ item.url }}" target="_blank" rel="noopener"><img src="{{ item.logo }}" class="entry-logo{% if include.type == 'experience' %} entry-logo-shadow{% endif %}"></a>
+  </td>
+  <td class="entry-content-cell">
+    {% if include.type == "education" %}
+    <div class="edu-flip-card" style="--school-color: {{ item.color }};">
+      <div class="edu-flip-inner">
+        <div class="edu-flip-front"><div><b>{{ item.name }}</b></div><div>{{ item.period }} &nbsp;·&nbsp; {{ item.location }}</div><div>{{ item.degree }} &nbsp;·&nbsp; {{ item.major }}</div></div>
+        <div class="edu-flip-back">
+          <span><span class="edu-back-label">GPA:</span> {{ item.gpa }}</span>
+          <span><span class="edu-back-label">Courses:</span> {{ item.courses }}</span>
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <div class="edu-flip-card"{% if item.flip_disabled %} data-flip="disabled"{% endif %}>
+      <div class="edu-flip-inner">
+        <div class="edu-flip-front"><div><b>{{ item.name }}</b></div><div>{{ item.period }} &nbsp;·&nbsp; {{ item.location }}</div><div>{{ item.role }} &nbsp;·&nbsp; {{ item.type }}</div></div>
+        <div class="edu-flip-back">
+          {% for detail in item.details %}<span>{{ detail }}</span>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </td>
+</tr>
