@@ -39,7 +39,7 @@ main:
   tldr_source: semantic_scholar
   tldr_url: https://www.semanticscholar.org/paper/98ba61ce6beff19d655795abb7897a2100767550
 - title: Explainable Cross-Disease Reasoning for Cardiovascular Risk Assessment from
-    LDCT
+    Low-Dose Computed Tomography
   authors: Yifei Zhang, Jiashuo Zhang, Mojtaba Safari, Xiaofeng Yang, Liang Zhao
   venue_short: arXiv
   venue: arXiv preprint
