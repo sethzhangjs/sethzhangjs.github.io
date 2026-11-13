@@ -1,6 +1,6 @@
 main:
-- title: 'Verifiable by Construction: Claim-Level Evaluation of Verbatim Citation
-    in Clinical Question Answering'
+- title: 'Verifiable by Construction: How Well Do LLMs Substantiate Their Clinical
+    Claims with Verbatim Quotes?'
   authors: Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst
   venue_short: ML4H
   venue: The 6th Machine Learning for Health Symposium
