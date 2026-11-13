@@ -1,4 +1,4 @@
-## Services
+## Service
 
 <ul class="honors-list">
 {% for item in site.data.services.main %}

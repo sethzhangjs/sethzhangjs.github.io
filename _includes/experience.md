@@ -1,4 +1,4 @@
-## Industry
+## Industry Experience
 
 <table class="entry-table">
 {% for item in site.data.experience.main %}
