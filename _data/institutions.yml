@@ -1,0 +1,15 @@
+# Institution logos shown on the right of each publication's link row.
+# Reference these keys from the `institutions` list in publications.yml.
+# Order: the corresponding author's institution goes last (rightmost).
+jhu:
+  name: Johns Hopkins University
+  logo: ./assets/img/edu/jhu.png
+sdu:
+  name: Shandong University
+  logo: ./assets/img/edu/sdu.png
+brown:
+  name: Brown University
+  logo: ./assets/img/edu/brown.png
+emory:
+  name: Emory University
+  logo: ./assets/img/edu/emory.png

@@ -13,6 +13,8 @@ main:
   tags:
   - Evaluation
   - LLM
+  institutions:
+  - jhu
   tldr: This work builds a standardized harness over four clinical practice guidelines
     and evaluates twelve LLMs on 222 synthetic clinical questions, finding that most
     models can attach verbatim quotes to over 90% of their claims from prompting alone,
@@ -32,6 +34,9 @@ main:
   poster: ./assets/poster/CHIL-2026-Poster.pdf
   tags:
   - Evaluation
+  institutions:
+  - brown
+  - jhu
   tldr: Clinical context is used to provide a more holistic evaluation of models for
     CXR diagnosis, and it is demonstrated that performance degrades when the correlation
     is broken between prior context and the current CXR label, suggesting that model
@@ -51,6 +56,9 @@ main:
   tags:
   - Multimodal
   - LLM
+  institutions:
+  - jhu
+  - emory
   tldr: An Explainable Cross-Disease Reasoning Framework for cardiovascular risk assessment
     from LDCT is proposed, which provides an auditable approach to cross-disease cardiovascular
     risk assessment from LDCT.
@@ -70,6 +78,8 @@ main:
   code: https://github.com/sethzhangjs/MucLiPred
   tags:
   - Bioinformatics
+  institutions:
+  - sdu
   tldr: A novel deep learning model equipped with a dual contrastive learning mechanism
     aimed at improving the prediction of multiple molecule-protein interactions and
     the identification of potential molecule-binding residues, which represents a

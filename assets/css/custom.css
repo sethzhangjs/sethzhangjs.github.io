@@ -80,8 +80,31 @@
   flex: 1;
   min-width: 0;
 }
+/* Flex row: gap replaces the inline whitespace that used to space the buttons,
+   and align-items centers the institution logos on them. */
 .pub-links {
   margin-top: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  /* Same height as the inline line box it replaces (body line-height 1.6). */
+  min-height: 1.6em;
+}
+/* As flex items the buttons size to their line-height; `normal` keeps them as
+   tall as they were when laid out inline. */
+.pub-links .btn {
+  line-height: normal;
+}
+/* Institution logos, pushed to the right end of the link row. */
+.pub-institutions {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+}
+/* Same size as .inline-school-logo in About Me. */
+.pub-institution-logo {
+  height: 1.1em;
 }
 .btn.btn-sm.z-depth-0 {
   font-size: 12px;

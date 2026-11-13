@@ -46,6 +46,9 @@
       {% if link.notes %}
       <strong><i class="pub-note">{{ link.notes }}</i></strong>
       {% endif %}
+      {% if link.institutions %}
+      <span class="pub-institutions">{% for key in link.institutions %}{% assign inst = site.data.institutions[key] %}<img src="{{ inst.logo }}" alt="{{ inst.name }}" title="{{ inst.name }}" class="pub-institution-logo">{% endfor %}</span>
+      {% endif %}
     </div>
     {% if link.tldr %}
     <div class="pub-tldr-body">
