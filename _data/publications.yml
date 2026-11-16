@@ -1,4 +1,25 @@
 main:
+- title: Causally Constrained and Uncertainty-Aware Cardiopulmonary Risk Prediction
+  authors: Yuxiang Lai, Jiashuo Zhang, Liang Zhao, Xiaofeng Yang
+  venue_short: arXiv
+  venue: arXiv preprint
+  year: 2026
+  doi: https://arxiv.org/abs/2611.17819
+  pdf: https://arxiv.org/pdf/2611.17819
+  image: ./assets/img/pub/pub_cardiopulmonary.png
+  image_scale: 80
+  tags:
+  - Trustworthy
+  institutions:
+  - emory
+  - jhu
+  - uchicago
+  tldr: The Causal Envelope Agent is presented, a two-stage framework that compiles
+    peer-reviewed epidemiological evidence into explicit constraints on risk-factor
+    weights before any outcome is seen, while estimating local baseline risk and newly
+    added CT phenotypes from cohort data.
+  tldr_source: semantic_scholar
+  tldr_url: https://www.semanticscholar.org/paper/69098bcd376fb5f0293aa910a6d92e556a4f4759
 - title: 'Verifiable by Construction: How Well Do LLMs Substantiate Their Clinical
     Claims with Verbatim Quotes?'
   authors: Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst

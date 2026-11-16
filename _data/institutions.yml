@@ -13,3 +13,6 @@ brown:
 emory:
   name: Emory University
   logo: ./assets/img/edu/emory.png
+uchicago:
+  name: University of Chicago
+  logo: ./assets/img/edu/uchicago.png
