@@ -10,15 +10,9 @@
 {% for item in pres_items %}
 <li data-pres-index="{{ forloop.index }}">
 <div class="pres-item">
-
-  <div>
-    <div class="title">{{ item.title }}</div>
-    <div class="periodical"><em>{{ item.venue }}</em>{% if item.type %} &middot; {{ item.type }}{% endif %}</div>
-    {% if item.location or item.date %}
-    <div class="periodical pres-meta">{{ item.location }}{% if item.location and item.date %} &middot; {% endif %}{{ item.date }}</div>
-    {% endif %}
-  </div>
-
+  <div class="title">{{ item.title }}</div>
+  <div>{% include author-highlight.html authors=item.authors name="Zhang, J." %}</div>
+  <div><em>{{ item.venue }}</em>{% if item.location %} &middot; {{ item.location }}{% endif %}{% if item.date %} &middot; {{ item.date }}{% endif %}{% if item.type %} &middot; {{ item.type }}{% endif %}</div>
 </div>
 </li>
 {% endfor %}

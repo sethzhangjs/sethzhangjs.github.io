@@ -1,11 +1,13 @@
+# `authors` use the resume's APA abbreviations; the template bolds "Zhang, J.".
+# `type` is shown after the date (Poster / Talk).
 main:
 
   - title: "Verifiable by Construction: How Well Do LLMs Substantiate Their Clinical Claims with Verbatim Quotes?"
     venue: "The 6th Machine Learning for Health Symposium"
     venue_short: ML4H
-    authors: "Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst"
+    authors: "Zhang, J., Chen, Y., Commodore-Mensah, Y., & Oberst, M."
     type: Poster
-    date: "December 2026"
+    date: "Dec. 2026"
     location: Sydney, Australia (Online)
     # link: (kept for reference; titles no longer render as links)
     link: ./assets/poster/ML4H-2026-Poster.pdf
@@ -15,9 +17,9 @@ main:
     # venue_url: (kept for reference; venues no longer render as links)
     venue_url: https://publichealth.jhu.edu/welch-center-for-prevention-epidemiology-and-clinical-research/welch-center-research-day
     venue_short: Welch Center
-    authors: "Jiashuo Zhang, Erik Skalnes, Andrea Orellana, Seth Martin, Yvonne Commodore-Mensah, Cheryl Dennison Himmelfarb, Yuling Chen, Michael Oberst"
+    authors: "Zhang, J., Skalnes, E., Orellana, A., Martin, S., Commodore-Mensah, Y., Dennison Himmelfarb, C., Chen, Y., & Oberst, M."
     type: Poster
-    date: "April 2026"
+    date: "Apr. 2026"
     location: Baltimore, MD
     # link: (kept for reference; titles no longer render as links)
     link: https://mcusercontent.com/e2064c41a1374f2fe4c62357d/files/01b2bcb8-7c3c-8ce5-c8c7-29615abc1894/Poster_Session_A_2026_final.pdf
@@ -27,9 +29,9 @@ main:
     # venue_url: (kept for reference; venues no longer render as links)
     venue_url: https://malonecenter.jhu.edu/johns-hopkins-malone-center-2025-symposium/
     venue_short: JHU
-    authors: "Jiashuo Zhang, Erik Skalnes, Yvonne Commodore-Mensah, Cheryl Dennison Himmelfarb, Yuling Chen, Michael Oberst"
+    authors: "Zhang, J., Skalnes, E., Commodore-Mensah, Y., Dennison Himmelfarb, C., Chen, Y., & Oberst, M."
     type: Poster
-    date: "December 2025"
+    date: "Dec. 2025"
     location: Baltimore, MD
     # link: (kept for reference; titles no longer render as links)
     link: https://malonecenter.jhu.edu/johns-hopkins-malone-center-2025-symposium/exhibition-halls/

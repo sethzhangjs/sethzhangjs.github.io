@@ -1,1 +1,4 @@
-{{ include.authors | replace: "Jiashuo Zhang", "<strong class='author-self'>Jiashuo Zhang</strong>" }}
+{%- comment -%} Bold my name in an author list; pass name= when the list uses another spelling (e.g. APA "Zhang, J."). {%- endcomment -%}
+{%- assign self_name = include.name | default: "Jiashuo Zhang" -%}
+{%- capture self_html %}<strong class='author-self'>{{ self_name }}</strong>{% endcapture -%}
+{{- include.authors | replace: self_name, self_html -}}
