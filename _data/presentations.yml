@@ -1,5 +1,15 @@
 main:
 
+  - title: "Verifiable by Construction: How Well Do LLMs Substantiate Their Clinical Claims with Verbatim Quotes?"
+    venue: "The 6th Machine Learning for Health Symposium"
+    venue_short: ML4H
+    authors: "Jiashuo Zhang, Yuling Chen, Yvonne Commodore-Mensah, Michael Oberst"
+    type: Poster
+    date: "December 2026"
+    location: Sydney, Australia (Online)
+    # link: (kept for reference; titles no longer render as links)
+    link: ./assets/poster/ML4H-2026-Poster.pdf
+
   - title: "Development and Evaluation of an AI Agent to Augment Multidisciplinary Care Teams in Shared Decision-Making for Improving Cardiovascular Health"
     venue: "2026 Welch Center Research Day"
     # venue_url: (kept for reference; venues no longer render as links)

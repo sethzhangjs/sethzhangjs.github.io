@@ -31,6 +31,7 @@ main:
   image: ./assets/img/pub/pub_verifiable.png
   image_scale: 75
   code: https://github.com/oberst-lab/verifiable-by-construction
+  poster: ./assets/poster/ML4H-2026-Poster.pdf
   tags:
   - Evaluation
   - LLM
